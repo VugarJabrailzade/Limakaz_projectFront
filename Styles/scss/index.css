@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.header-top {
+  background-color: #232331;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-left ul {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  padding-left: 50px;
+}
+.top-left ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: white;
+  font-size: 13px;
+}
+
+.head-icons {
+  color: white;
+  display: flex;
+  gap: 15px;
+  padding-right: 50px;
+  font-size: 14px;
+}
+.head-icons :hover {
+  color: #f15834;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.header-lower {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  gap: 150px;
+  justify-content: space-between;
+}
+
+.main-menu {
+  padding-right: 160px;
+}
+.main-menu .navigation {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.nav-name {
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-name:hover {
+  color: #f15834;
+  transition: 0.2s;
+}
+
+.outer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.outer-box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon-head {
+  font-size: 19px;
+}
+
+.login-tag {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  z-index: 999;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 124px;
+  height: 70px;
+  background-color: #f15834;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.login-btn::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.login-btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.login-btn::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #232331;
+  transition: transform 0.4s ease-in-out;
+}
+
+@media (orientation: landscape) {
+  .login-btn {
+    grid-auto-flow: column;
+    color: white;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,14 @@
+{
+  "name": "limakaz_projectfront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss:watch": "sass --watch Styles/scss/main.scss Styles/css/main.css --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}
