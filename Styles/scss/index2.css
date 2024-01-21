@@ -1,0 +1,39 @@
+@media only screen and (max-width: 760px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .header-top {
+    display: none;
+  }
+  .header-lower {
+    padding-left: 0;
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .outer-box {
+    margin-right: 15px;
+    display: flex;
+    gap: 12px;
+  }
+  .login-btn {
+    display: none !important;
+  }
+  .main-menu {
+    display: none;
+  }
+  .search-icon-head i {
+    font-size: 18px;
+  }
+  .basket-svg svg {
+    width: 20px;
+    padding-bottom: 2px;
+  }
+  .menu-icon {
+    font-size: 18px;
+    padding-top: 2px;
+  }
+}/*# sourceMappingURL=index2.css.map */
