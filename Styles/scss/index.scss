@@ -4,6 +4,21 @@
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
 }
+
+.customcontainer{
+    width: 1519px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.middlecontainer{
+    max-width: 1050px;
+    height: 2101px;
+    margin-top: 80px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
 //header top black side
 .header-top{
     background-color: #232331;
@@ -96,11 +111,9 @@
     display: none;
 }
 
-
 .search-icon-head{
     font-size: 19px;
 }
-
 
 .login-tag{
     color: white;
@@ -198,6 +211,120 @@
     font-size: 10px;
   }
 
+  .tracking-form{
+    width: 1170px;
+    height: 120px;
+    background-color:#f15834;
+    border-radius: 12px;
+    background-image: url(https://limak.az/new_front/assets/revolution/images/object-1.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  .order-inf{
+    width: 220px;
+    height: 54px;
+    text-align: center;
+    position: relative;
+    color: white;
+    left: 50px;
+    top: 26px;
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .order-form{
+    width: 864px;
+    height: 70px;
+    background-color: white;
+    position: relative;
+    bottom: 32px;
+    left: 280px;
+    border-radius: 10px;
+  }
+
+  .main-middle-content{
+   background-color: #e5e5e5;
+  }
+
+  .form-inp{
+    width: 556px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    input{
+        width: 500px;
+        border: none;
+        outline: none;
+    }
+  }
+
+  .row-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .main-order-btn{
+    width: 182px;
+    height: 50px;
+    background-color: #f15834;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 700;
+  }
+
+  .markets-header{
+    h4{
+        font-weight: 800;
+        font-size: 25px;
+    }
+  }
+  .store-list-items{
+      gap: 20px;
+      padding-top: 15px;
+      padding-left: 10px;
+    a{
+        width: 240px;
+        height: 176px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+        background-color: white;
+    }
+    img{
+        width: 160px;
+        height: 113px;
+        object-fit: contain;
+    }
+  }
+
+  .more-btn{
+    width: 224px;
+    height: 47px;
+    border: 2px solid #f15834;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 600;
+    color: #f15834;
+    gap: 8px;
+    text-decoration: none;
+ 
+  }
+  .markets-foot{
+    margin-top: 25px;
+    display: flex;
+    justify-content: end;
+  }
 
 
   //Mobile Responsive Css
@@ -209,6 +336,12 @@
             box-sizing: border-box;
             font-family: 'Nunito Sans', sans-serif;
     }
+   .customcontainer, .middlecontainer{
+        width: 375px;
+        margin: 0;
+        padding: 0;
+   }
+
     .header-top{
         display: none;
     }
@@ -300,5 +433,60 @@
       .slick-dots li button:before{
         font-size: 7px;
       }
+      .markets-header{
+        h4{
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+      }
+
+      .store-list-items{
+        width: 375px;
+        display: flex;
+        justify-content: center;
+          a{
+              width: 160px;
+              height: 111px;
+        }
+        img{
+            width: 140px;
+            height: 113px;
+            object-fit: contain;
+        }
+      }
+      .more-btn{
+        width: 200px;
+        margin-right: 15px;
+      }
+
+
+      .tracking-form{
+        width: 345px;
+        height: 237px;
+        margin-top: 10px;
+        display: block;
+        h4{
+            font-size: 25px;
+            margin-top: 0px;
+            text-align: start;
+            width: 280px;
+        }
+      }
+      .order-form{
+        width: 305px;
+        height: 140px;
+        position: relative;
+        left: 20px;
+        top: 15px;
+      }
+      .main-order-btn{
+        width: 262px;
+        height: 50px;
+        margin-top: 10px;
+      }
+      .order-inp{
+        width: 222px !important;
+      }
+
   }
  
