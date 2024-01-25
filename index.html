@@ -106,7 +106,7 @@
                 </nav>
 
                 <!-- mobile menu -->
-                <nav class="mobile-menu-items bg-body-tertiary navbar-expand-lg fixed-top w-5">
+                <nav class="mobile-menu-items bg-body-tertiary  fixed-top w-5">
                         <div class="container-fluid">
                           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
@@ -120,7 +120,7 @@
                             <div class="offcanvas-body">
                               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="#">Tariflər</a>
+                                  <a class="nav-link" aria-current="page" href="#">Tariflər</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="#">Kalkulyator</a>
@@ -147,7 +147,7 @@
                                     <a class="nav-link" href="#">Əlaqə</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Sifariş Et</a>
+                                    <a class="nav-link menu-order-btn" href="#">Sifariş Et</a>
                                 </li>
                               </ul>
                             </div>
@@ -172,17 +172,19 @@
                 <div class="outer-box-item4 login-btn">
                     <a class="login-tag">DAXIL OL</a>
                 </div>
-                <div class="outer-box-item5 person-icon-mobile">
-                    <a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-                          </svg>
-                    </a>
-                </div>
-                <div class="outer-box-item6 hamburger-menu-icn navbar-toggler"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" ">
-                    <a>
-                    <i class="fa-solid fa-bars menu-icon"></i>
-                    </a>
+                <div class="person-icon-mobile">
+                    <div>
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                              </svg>
+                        </a>
+                    </div>
+                    <div class="hamburger-menu-icn navbar-toggler"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <a>
+                        <i class="fa-solid fa-bars menu-icon"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,9 +228,10 @@
                                 </svg>
                                 <input class="order-inp" type="text" placeholder="Məhsulun linkini əlavə et">
                             </div>
-                            <div class="form-group">
-                                <button class="main-order-btn" type="submit"> SİFARİŞ ET</button>
-                                <!-- <span>SİFARİŞ ET</span> -->
+                            <div class="form-group  ">
+                                <button class="main-order-btn login-btn " type="submit">
+                                    <span class="login-tag">SİFARİŞ ET</span>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -238,11 +241,13 @@
 
             <!-- Middle Section -->
             <div class="middlecontainer">
+                
+                <!-- Markets section -->
                 <div>
                     <div class="home">
                         <div class="block-market d-block">
                             <div class="markets-header">
-                                <h4>Mağazalar</h4>
+                                <h4>MAĞAZALAR</h4>
                             </div>
                             <div class="markets-body">
                                 <div class="store-list">
@@ -299,6 +304,313 @@
                         </div>
                         <div></div>
                         <div></div>
+                    </div>
+                </div>
+
+                <!-- News section(xeberler) -->
+                <div class="news-main-pg">
+                    <div class="news-block">
+                        <div class="news-head">
+                            <h4>YENİLİKLƏR VƏ ELANLAR</h4>
+                        </div>
+                        <div class="news-body">
+                            <div class="news-list-items">
+                                <div class="row main-pg-news">
+                                    <div class="news-card-1  col-xl-3 col-xxl-3 col-sm-6 col-12 col">
+                                        <a href="#" class="news-card">
+                                            <div class="card-text">
+                                                <img src="https://limakaz.s3.eu-west-2.amazonaws.com/public/news/news-170383622116394.png.jpeg" 
+                                                     alt="Yeni il bayraminiz mubarek!">
+                                                <div class="card-body">
+                                                    <span class="card-text-head">Yeni il bayraminiz Mubarek!</span>
+                                                    <p class="card-date">
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                        <span>25.01.2024</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-card-1  col-xl-3 col-xxl-3 col-sm-6 col-12 col">
+                                        <a href="#" class="news-card">
+                                            <div class="card-text">
+                                                <img src="https://limakaz.s3.eu-west-2.amazonaws.com/public/news/news-170383622116394.png.jpeg" 
+                                                     alt="Yeni il bayraminiz mubarek!">
+                                                <div class="card-body">
+                                                    <span class="card-text-head">Yeni il bayraminiz Mubarek!</span>
+                                                    <p class="card-date">
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                        <span>25.01.2024</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-card-1  col-xl-3 col-xxl-3 col-sm-6 col-12 col">
+                                        <a href="#" class="news-card">
+                                            <div class="card-text">
+                                                <img src="https://limakaz.s3.eu-west-2.amazonaws.com/public/news/news-170383622116394.png.jpeg" 
+                                                     alt="Yeni il bayraminiz mubarek!">
+                                                <div class="card-body">
+                                                    <span class="card-text-head">Yeni il bayraminiz Mubarek!</span>
+                                                    <p class="card-date">
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                        <span>25.01.2024</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-card-1  col-xl-3 col-xxl-3 col-sm-6 col-12 col">
+                                        <a href="#" class="news-card">
+                                            <div class="card-text">
+                                                <img src="https://limakaz.s3.eu-west-2.amazonaws.com/public/news/news-170383622116394.png.jpeg" 
+                                                     alt="Yeni il bayraminiz mubarek!">
+                                                <div class="card-body">
+                                                    <span class="card-text-head">Yeni il bayraminiz Mubarek!</span>
+                                                    <p class="card-date">
+                                                        <i class="fa-solid fa-calendar-days"></i>
+                                                        <span>25.01.2024</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="news-foot">
+                                    <a href="#" class="more-btn ">
+                                        Daha çox
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tariff Plans -->
+                <div class="tariff-main-pg">
+                    <div class="tarif-block">
+                        <div class="tarif-head">
+                            <h4>ÖLKƏLƏR ÜZRƏ TARİFLƏR</h4>
+                        </div>
+                        <div>
+                            <div class="tarif-card">
+                                <div class="tariff-card-left">
+                                    <div class="tarif-card-header">
+                                        <img src="https://limak.az/new_front/assets/img/icons/tr-circle.svg" alt="">
+                                        <h3>Türkiyə</h3>
+                                    </div>
+                                    <div>
+                                        <div class="row tarif-item-row">
+                                            <a class="tarif-item col-md-2">
+                                                <span>Bakı-İçərişəhər</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Bakı-Xalqlar Dostluğu</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Xırdalan</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Sumqayıt</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Gəncə</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Zaqatala</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Balakən</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Bakı-Gənclik</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Bakıxanov</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Xətai</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>İnşaatçılar</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Badamdar</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Həzi Aslanov</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Zabrat</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tarif-price">
+                                        <table class="table">
+                                            <tbody>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0 - 0.1 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">1.70 AZN | 1.00 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0.101 - 0.25 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">3.40 AZN | 2.00 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0.251 - 0.5 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">5.10 AZN | 3.00 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0.501 - 0.7 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">6.80 AZN | 4.00 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0.701 - 1 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">7.65 AZN | 4.50 $</span>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                                <div class="tariff-card-right">
+                                    <div class="tarif-card-header">
+                                        <img src="https://limak.az/new_front/assets/img/icons/usa-circle.svg" alt="">
+                                        <h3>Amerika</h3>
+                                    </div>
+                                    <div>
+                                        <div class="row tarif-item-row">
+                                            <a class="tarif-item col-md-2">
+                                                <span>Bakı-İçərişəhər</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Bakı-Xalqlar Dostluğu</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Xırdalan</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Sumqayıt</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Gəncə</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Zaqatala</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Balakən</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Bakı-Gənclik</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Bakıxanov</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Xətai</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>İnşaatçılar</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Badamdar</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Həzi Aslanov</span>
+                                            </a>
+                                            <a class="tarif-item col-md-2">
+                                                <span>Zabrat</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tarif-price">
+                                        <table class="table">
+                                            <tbody>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0 - 0.1 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">4.17 AZN | 2.45 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0.101 - 0.25 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">6.71 AZN | 3.95 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0.251 - 0.5 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">5.10 AZN | 3.00 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0.501 - 0.7 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">6.80 AZN | 4.00 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">0.701 - 1 kg</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">7.65 AZN | 4.50 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">1.001 - 10 kg - hər kg üçün</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">13.52 AZN | 7.95 $</span>
+                                                </td>
+                                              </tr>
+                                              <tr class="tarif-table">
+                                                <td class="tarif-table-body">
+                                                  <span class="weight-1">10 - kg -dan artıq hər kg üçün</span>
+                                                </td>
+                                                <td class="tarif-table-body">
+                                                  <span class="price-2">12.24 AZN | 7.20 $</span>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

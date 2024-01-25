@@ -34,3 +34,5 @@ $('.imgCarousel').slick({
         // instead of a settings object
       ]
   });
+
+  $('.single-item').slick();
