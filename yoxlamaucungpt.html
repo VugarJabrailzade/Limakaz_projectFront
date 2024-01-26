@@ -3,32 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Div'leri içeren Table Örneği</title>
+  <link rel="stylesheet" href="prosta.css">
+  <title>Slider</title>
 </head>
 <body>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">1. Sütun</th>
-      <th scope="col">2. Sütun</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <div class="div-1">İçerik 1</div>
-      </td>
-      <td>
-        <div class="div-2">İçerik 2</div>
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <div class="slider-container">
+    <div class="tarif-card">
+        <div class="tariff-card-left card-slide">
+            <!-- Kart içeriği buraya gelir -->
+        </div>
+        <div class="tariff-card-right card-slide">
+            <!-- İkinci kart içeriği buraya gelir -->
+        </div>
+        <!-- Daha fazla kart ekleyebilirsiniz -->
+    </div>
+</div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<button class="more-prev">Previous</button>
+<button class="more-next">Next</button>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var sliderContainer = document.querySelector(".slider-container");
+        var cards = document.querySelectorAll(".tarif-card");
+        var cardWidth = cards[0].offsetWidth;
+        var currentIndex = 0;
+
+        sliderContainer.style.width = cardWidth * cards.length + "px";
+
+        // Previous Button'ına tıklanınca
+        document.querySelector(".more-prev").addEventListener("click", function () {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            updateSlider();
+        });
+
+        // Next Button'ına tıklanınca
+        document.querySelector(".more-next").addEventListener("click", function () {
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateSlider();
+        });
+
+        // Slider'ı güncelle
+        function updateSlider() {
+            var translateValue = -currentIndex * cardWidth;
+            sliderContainer.style.transform = "translateX(" + translateValue + "px)";
+        }
+    });
+</script>
 </body>
 </html>

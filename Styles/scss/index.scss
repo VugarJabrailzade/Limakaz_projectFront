@@ -13,8 +13,14 @@
 }
 .middlecontainer{
     max-width: 1050px;
-    width: 2000px;
+    width: 1050px;
     margin: 0 auto;
+}
+
+.yoxlama{
+  width: 500px;
+  height: 1500px;
+  background-color: red;
 }
 
 //header top black side
@@ -250,7 +256,6 @@
     }
   }
 
-
   .row-div{
     display: flex;
     flex-wrap: wrap;
@@ -270,6 +275,8 @@
     color: white;
     font-weight: 700;
   }
+
+  //Market Section
 
   .markets-header{
     h4{
@@ -318,13 +325,22 @@
     justify-content: end;
 
   }
+  .block-market{
+    width: 1020px;
+  }
+
+
+
   // Xeberler Bolmesi ( News Section )
+  .market-main-pg{
+    margin-top: 140px;
+  }
   .news-main-pg{
     margin-top: 50px;
+    display: flex;
   }
   .news-block{
-    display: flex;
-    flex-direction: column;
+    
     gap: 20px;
   }
   .news-head{
@@ -334,9 +350,9 @@
     }
   }
   .main-pg-news{
-    width: 1044px;
-    gap: 25px;
+    width: 1030px;
     display: flex;
+    gap: 20px;
   }
   .news-card{
     width: 200px;
@@ -350,14 +366,14 @@
       object-fit: contain;
     }
   }
- .card-body{
+  .card-body{
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 12px;
   color: #9b9b9b;
   margin-top: 30px;
- }
+  }
   .card-text-head{
     font-size: 16px;
     font-weight: 700;
@@ -382,18 +398,25 @@
 
   //Tariff Section
   .tariff-main-pg{
-    margin-top: 130px;
+    margin-top: 100px;
     
   }
   .tarif-head{
     h4{
       font-weight: 700;
-      font-size: 25px;
+      padding-top: 10px;
+      font-size: 20px;
     }
+  }
+  .slider-btn{
+    display: none;
   }
   .tarif-block{
     width: 1030px;
-    height: 899px;
+    height: 999px;
+    display: flex; 
+    flex-direction: column;
+    gap: 18px;
   }
 
   .tariff-card-left{
@@ -433,46 +456,68 @@
       height: 16px;
     }
   }
-.tarif-item{
-  width: 168px;
-  height: 43px;
-  color: black;
-  font-size: 12px;
-  padding: 0 !important;
-  span{
+  .tarif-item{
+    width: 168px;
+    height: 43px;
     color: black;
-    font-size: 13px;
-    padding-left: 5px;
+    font-size: 12px;
+    padding: 0 !important;
+    span{
+      color: black;
+      font-size: 13px;
+      padding-left: 5px;
+    }
   }
-}
-.tarif-item-row{
-  margin-top: 15px;
-  width: 515px;
-  padding-left: 10px;
-  margin-left: 0px;
-  border-bottom: 1px solid #9b9b9b50;
-}
-.tarif-table{
-  width: 515px;
-  height: 70px;
-}
-.tarif-table-body{
-  padding: 25px !important;
-  width: 320px;
-  span{
-  font-size: 18px;
-  font-weight: 800;    
+  .tarif-item-row{
+    margin-top: 15px;
+    width: 515px;
+    padding-left: 10px;
+    margin-left: 0px;
+    border-bottom: 1px solid #9b9b9b50;
   }
-}
-.price-2{
-  display: flex;
-  justify-content: end;
-} 
+  .tarif-table-body{
+    padding: 25px !important;
+    width: 320px;
+    span{
+    font-size: 18px;
+    font-weight: 800;    
+    }
+  }
+  .price-2{
+    display: flex;
+    justify-content: end;
+  } 
 
-.miidle-sec{
-  display: flex;
+  // Sertification Section
+
+  .sertf-main-pg{
+    width: 1030px;
+    margin-top: 50px;
+  }
+
+ .sertf-card{
+  height: 140px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-}
+  background-color: white;
+  border-radius: 8px;
+  margin: 10px;
+ }
+ 
+ .sertf-body{
+  width: 1050px !important;
+  gap: 50px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+  box-sizing: border-box;
+ }
+
+
+
 
   //Mobile Responsive Css
 
@@ -483,22 +528,23 @@
             box-sizing: border-box;
             font-family: 'Nunito Sans', sans-serif;
     }
-   .customcontainer{
-        width: 375px;
-        margin: 0;
-        padding: 0;
-   }
-   .middlecontainer{
-    max-width: 100%;
-    width: 100%;
-   }
+    .customcontainer{
+          width: 375px;
+          margin: 0;
+          padding: 0;
+     }
+      .middlecontainer{
+        max-width: 100%;
+        width: 100%;
+      }
+    
    .person-icon-mobile{
     display: flex;
     gap: 10px;
-  }
-  .hamburger-menu-icn{
+   }
+   .hamburger-menu-icn{
     margin-top: 2px;
-  }
+   }
    
     .header-top{
         display: none;
@@ -531,7 +577,7 @@
       border-color: rgba(240, 241, 243, 0.292);
     }
     
-    .login-btn{
+    .outer-box-item4{
         display: none !important;
     }
     .main-menu{
@@ -608,13 +654,17 @@
       .slick-dots li button:before{
         font-size: 7px;
       }
+
+      //Market Section
+      .market-main-pg{
+        margin-top: 80px;
+      }
       .markets-header{
         h4{
             margin-left: 20px;
             margin-top: 50px;
         }
       }
-
       .store-list-items{
         width: 375px;
         display: flex;
@@ -629,11 +679,10 @@
             object-fit: contain;
         }
       }
-      .more-btn{
-        width: 200px;
+      .markets-foot{
+        width: 350px;
         margin-right: 15px;
       }
-
 
       .tracking-form{
         width: 345px;
@@ -667,23 +716,33 @@
       .news-head{
         h4{
           font-size: 20px;
-          margin-left: 15px;
+          margin-left: 25px;
         }
+      }
+      .news-main-pg{
+        height: 1295px;
+      }
+      .news-list-items{
+        height: 1252px;
       }
 
       .main-pg-news{
         display: flex;
         flex-direction: column;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-top: 20px;
+        margin-right: 5px;
       }
       .news-card-1{
-        width: 355px;
+        width: 330px;
         height: 298px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 15px;
       }
       .news-card{
         img{
-          width: 350px;
+          width: 320px;
           height: 200px;
         }
       }
@@ -694,19 +753,99 @@
         margin-top: 20px;
       }
       .news-foot{
-        display: flex;
-        margin-left: 170px;
+        width: 350px;
       }
+      
      
       // Tariff Section Responsive
 
-      .tariff-main-pg{
-        margin-top: 50px;
-      }
       .tarif-block{
         width: 355px;
         height: 978px;
+        margin-left: 10px;
       }
+      .tarif-head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .slider-btn{
+        display: flex;
+        gap: 8px;
+        button{
+          width: 30px;
+          height: 30px;
+          border: none;
+          color: white;
+          cursor: pointer;
+          background-color: #f15834;
+          border-radius: 50px;
+        }
+      }
+      .tarif-table-main{
+        width: 515px;
+      }
+      .tarif-card-header{
+        width: 355px;
+      }
+      .tarif-table{
+        display: flex;
+        width: 355px;
+        border-bottom: 1px solid #9b9b9b50;
+        justify-content: center;
+        align-items: center;
+      }
+      .tarif-table-body{
+        padding: 0 !important;
+        width: 150px !important;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        span{
+          text-align: center;
+        }
+      }
+     .tarif-item-row{
+      width: 350px;
+     }
+
+     // Sertification Slider
+
+     .sertf-main-pg{
+      width: 375px;
+      margin-top: 50px;
+    }
+    .sertf-head{
+      h4{
+        padding-left: 15px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    .mySwiper{
+      height: 180px;
+      display: flex;
+    }
+    .sertf-card{
+      height: 140px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 8px;
+      margin: 10px;
+     }
+     
+     .sertf-body{
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden !important;
+      box-sizing: border-box;
+     }
+    
 
 
   }

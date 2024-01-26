@@ -34,5 +34,24 @@ $('.imgCarousel').slick({
         // instead of a settings object
       ]
   });
+  
+  //Sertification section slider
+$('.sertf-body').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows:false,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  responsive:[
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+			
 
-  $('.single-item').slick();
+  var tarifcards = document.querySelector(".tarif-card");
