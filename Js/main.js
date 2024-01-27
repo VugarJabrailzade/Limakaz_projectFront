@@ -41,7 +41,7 @@ $('.sertf-body').slick({
   slidesToScroll: 1,
   arrows:false,
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 4000,
   responsive:[
     {
       breakpoint: 480,

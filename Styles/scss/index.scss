@@ -344,6 +344,7 @@
     gap: 20px;
   }
   .news-head{
+    margin-bottom: 30px;
     h4{
       font-weight: 800;
       font-size: 25px;
@@ -405,7 +406,7 @@
     h4{
       font-weight: 700;
       padding-top: 10px;
-      font-size: 20px;
+      font-size: 25px;
     }
   }
   .slider-btn{
@@ -418,7 +419,6 @@
     flex-direction: column;
     gap: 18px;
   }
-
   .tariff-card-left{
     width: 515px;
     height: 899px;
@@ -437,7 +437,6 @@
     overflow: hidden;
     border-radius: 6px;
   }
-
   .tarif-card-header{
     width: 515px;
     height: 70px;
@@ -488,13 +487,13 @@
     justify-content: end;
   } 
 
+
   // Sertification Section
 
   .sertf-main-pg{
     width: 1030px;
     margin-top: 50px;
   }
-
  .sertf-card{
   height: 140px;
   display: flex !important;
@@ -505,7 +504,6 @@
   border-radius: 8px;
   margin: 10px;
  }
- 
  .sertf-body{
   width: 1050px !important;
   gap: 50px !important;
@@ -515,7 +513,137 @@
   overflow: hidden !important;
   box-sizing: border-box;
  }
+ .sertf-head{
+  h4{
+    font-weight: 700;
+    margin-left: 10px;
+  }
+ }    
+  // Footer Section
 
+  .footerclas{
+    width: 100%;
+    height: 250px;
+    background-color:#373736;
+    display: flex;
+    justify-content: center;
+    padding: 52px;
+  }
+  .container-class{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-main{
+    width: 1030px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+  }
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+    a{
+      text-decoration: none;
+    }
+  }
+ 
+  .footer-menu{
+    display: flex;
+    a:hover{
+      text-decoration:underline;
+    }
+  }
+  .footer-logo{
+    padding-bottom: 15px;
+    img{
+      width: 140px;
+      height: 32px;
+    }
+  }
+  .footer-app{
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+  }
+  .footer-menu-col{
+    width: 170px;
+    height: 90px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    a{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.7);
+      };
+  }
+  .footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 15px;
+  }
+  .footer-social{
+    display: flex;
+    gap: 15px;
+    a{
+      text-decoration: none;
+    }
+    img{
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .footer-hotline{
+    padding-left: 38px;
+  }
+  .footer-bottom{
+    width: 1030px !important;
+    height: 48px !important;
+    }
+  .footer-copy{
+      padding-top: 20px;
+      height: 48px;
+      span{
+        color: rgba(255,255,255,.7);
+        font-size: 14px;
+        a{
+          text-decoration: none;
+          font-size: 14px;
+          color: rgba(255,255,255,.7);
+        }
+      }
+  }
+  .footer-copy span a:hover{
+    text-decoration: underline;
+  }
+
+  .footer-bottom{
+    border-top: 1px solid rgba(255,255,255,.7);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .footer-payment{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .footer-hotline-mobile{
+    display: none;
+  }
+  .footer-social-mobile{
+    display: none;
+  }
+  .footer-app-mobile{
+    display: none;
+  }
 
 
 
@@ -564,7 +692,7 @@
     }
    
     .menu-order-btn{
-      width: 270px;
+      width: 255px;
       height: 40px;
       background-color: #f15834;
       border-radius: 5px;
@@ -845,8 +973,120 @@
       overflow: hidden !important;
       box-sizing: border-box;
      }
-    
 
+     //Footer Section
+     .footerclas{
+      height: 475px;
+      background-color:#373736;
+      border-radius: 5px;
+      padding: 20px;
+     
+    }
+    .container-class{
+      display: flex;
+      width: 375px;
+    }
+    
+    .footer-main{
+      width: 347px;
+      height: 348px;
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .footer-left{
+      width: 335px;
+      height: 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+      img{
+        width: 120px;
+        height: 32px;
+      }
+    }
+
+    .footer-hotline-mobile{
+      display: block;
+      
+    }
+    .footer-app{
+      display: none;
+    }
+    .footer-right{
+      display: none;
+    }
+    .footer-social-mobile{
+      display: block;
+      a{
+      text-decoration: none;
+
+      }
+      img{
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .footer-menu{
+      display: flex;
+      width: 357px !important;
+      height: 180px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 25px;
+    }
+    .footer-menu-col{
+      width: 150px;
+      height: 90px;
+      gap: 5px;
+      display: flex;
+      padding: 0;
+      a{
+        text-decoration: none;
+        font-size: 15px;
+        color: #cfcece;
+        padding-left: 30px;
+      }
+    }
+
+    .footer-app-mobile{
+      display: flex;
+      margin-top: 20px;
+      img{
+        width: 162px;
+        height: 42px;
+      }
+    }
+    .footer-bottom{
+      width: 352px !important;
+      height: 61px !important;
+      border-top: 1px solid rgba(255,255,255,.7);
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      gap: 10px !important;
+    }
+    .footer-payment{
+      display: flex;
+      gap: 20px;
+      img{
+        width: 60px;
+        height: 30px;
+      }
+    }
+    .footer-copy{
+      width: 162px;
+      height: 44px;
+      padding: 0;
+      margin-top: 18px;
+      span{
+        font-size: 12px;
+      }
+    }
 
   }
  
