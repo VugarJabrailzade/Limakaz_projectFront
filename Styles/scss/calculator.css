@@ -241,6 +241,15 @@
   outline: none;
 }
 
+.calc-breadcamp-tag {
+  text-decoration: none;
+  color: black;
+}
+.calc-breadcamp-tag:hover {
+  text-decoration: underline;
+  color: #F05835;
+}
+
 .calculator-main-pg {
   width: 1030px;
   height: 895px;
@@ -685,5 +694,130 @@
   }
   .btn-close-mob-menu i {
     font-size: 25px;
+  }
+  .calculator-main-pg {
+    width: 355px;
+    height: 1398px;
+  }
+  .calculator-block {
+    width: 355px;
+    height: 1098px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .calc-card-row {
+    display: flex;
+    gap: 25px;
+  }
+  .calc-head {
+    width: 355px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  .calc-head h4 {
+    margin: 0;
+  }
+  .calc-breadcamp {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .form-calc {
+    width: 353px;
+    height: 446px;
+    padding: 20px 15px;
+  }
+  .calc-card {
+    width: 355px;
+    margin-left: 10px;
+  }
+  .calc-input {
+    width: 343px;
+    height: 368px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+  }
+  .calc-input div {
+    padding: 0;
+    height: 56px;
+  }
+  .select-region, .select-filial {
+    width: 162px;
+    height: 40px;
+  }
+  .input-count {
+    width: 162px;
+    height: 40px;
+  }
+  .input-group input {
+    width: 110px;
+    height: 40px;
+  }
+  .input-weight button, .input-en button, .input-uzun button, .input-height button {
+    border: 1px solid #dfdfdf;
+    width: 53px;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: none;
+  }
+  .calc-total {
+    width: 300px;
+    height: 40px;
+    padding-top: 10px;
+  }
+  .total-label, .total-price {
+    display: flex;
+    align-items: center;
+  }
+  .total-label span {
+    padding-left: 10px;
+  }
+  .all-count {
+    font-weight: 600;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+  }
+  .calc-Btn {
+    width: 343px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-calc-btn {
+    width: 320px;
+  }
+  .calc-info-icn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .currency-card {
+    width: 355px;
+    margin-left: 10px;
+  }
+  .currency-type {
+    border: 1px solid #e5e5e5;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .currency-card-info {
+    padding: 18px 27px;
+    width: 355px;
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 10px;
+  }
+  .currency-card-info p {
+    color: #767676;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=calculator.css.map */
