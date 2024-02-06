@@ -20,6 +20,9 @@
 
 .main-middle-content {
   background-color: #e5e5e5;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header-top {
@@ -94,7 +97,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .outer-box-item1, .outer-box-item2, .outer-box-item3, .outer-box-item4 {
@@ -113,7 +116,7 @@
 
 .login-tag {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 2px;
   font-weight: 700;
   z-index: 999;
@@ -233,22 +236,72 @@
   border-radius: 10px;
 }
 
-.tariff-main-pg {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.middle-panel {
+  width: 100%;
+  height: 1452px;
 }
 
-.tarif-head {
+.middle-panel {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.bn-img-l {
+  top: 165px;
+  position: sticky;
+  cursor: pointer;
+  padding: 20px;
+}
+.bn-img-l img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 203px;
+  height: 528px;
+}
+
+.bn-img-2 {
+  top: 165px;
+  position: sticky;
+  cursor: pointer;
+  padding: 20px;
+}
+.bn-img-2 img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 203px;
+  height: 528px;
+}
+
+.left-banner, .right-banner {
+  position: relative;
+  height: 1400px;
+}
+
+.aside-card-body {
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.userPanel-head {
   display: flex;
   justify-content: space-between;
+  margin-top: 42px;
+  margin-bottom: 22px;
 }
-.tarif-head h4 {
+.userPanel-head h4 {
   font-weight: 700;
   padding-top: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.tarif-breadcamp {
+.userPanel-breadcamp {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,108 +311,301 @@
   margin: 0;
   font-size: 14px;
 }
-.tarif-breadcamp a {
+.userPanel-breadcamp a {
   text-decoration: none;
   color: black;
 }
-.tarif-breadcamp a:hover {
+.userPanel-breadcamp a:hover {
   text-decoration: underline;
   color: #f15834;
 }
 
-.slider-btn {
-  display: none;
+.user-left-block {
+  height: 1244px;
 }
 
-.tarif-block {
-  width: 1030px;
-  height: 999px;
+.list-group-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+
+.user-nav {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 15px;
 }
 
-.tariff-card-left {
-  width: 515px;
-  height: 899px;
-  background-color: white;
-  border-radius: 6px;
+.user-nav-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
 }
 
-.tariff-card-right {
-  width: 498px;
-  height: 899px;
-  background-color: white;
-  border-radius: 6px;
+.upper {
+  text-transform: uppercase;
 }
 
-.tarif-card {
+.list-item-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-group-item {
+  padding: 0;
+}
+.list-group-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-item-hover:hover {
+  color: #dc3545;
+}
+
+.user-nav-red {
+  color: red;
+}
+
+.family-new-sticker {
+  color: white;
+  background-color: red;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+  line-height: 1;
+}
+
+.user-nav-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-nav-group-label {
+  font-size: 14px;
+}
+
+.progress {
+  width: 201px;
+  margin-left: 2px;
+  background-color: rgba(135, 130, 128, 0.268);
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-left-block {
+  color: white;
+}
+
+.aside-nav {
+  margin-top: 10px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(129, 125, 125, 0.607);
+  border-radius: 0;
   display: flex;
   gap: 15px;
-  overflow: hidden;
-  border-radius: 6px;
 }
 
-.tarif-card-header {
-  width: 515px;
-  height: 70px;
+.aside-nav-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.aside-nav-tag {
   display: flex;
-  padding: 24px 20px;
-  gap: 24px;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid rgba(155, 155, 155, 0.3137254902);
 }
-.tarif-card-header h3 {
-  font-size: 20px;
+
+.list-group-item-middle a {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  text-decoration: none;
+  color: #373736;
+}
+
+.aside-account {
+  margin-top: 10px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(129, 125, 125, 0.607);
+  border-radius: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.log-content {
+  width: 725px;
+  height: 534px;
+}
+
+.dashboard-card {
+  width: 226px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.dashboard-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashboard-card-body img {
+  width: 36px;
+  height: 42px;
+  text-align: center;
+}
+
+.dashboard-card:hover .dashboard-card-icon {
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
+}
+.dashboard-card:hover .dashboard-card-title {
+  color: #f15834;
+  transition: all 0.2s ease-in-out;
+}
+
+.dashboard-card-icon {
+  margin-bottom: 35px;
+}
+
+.dashboard-class-link {
+  text-decoration: none;
+  color: black;
+}
+
+.dashboard-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.panel-banner-img {
+  width: 724px;
+  margin-top: 30px;
+}
+
+.aside-card-currency {
+  width: 226px;
+  height: 395px;
+  margin-top: 25px;
+  padding: 20px !important;
+}
+
+.form-calc-title {
+  display: flex;
+  align-items: center;
+  color: black;
+  gap: 15px;
+}
+.form-calc-title h3 {
+  font-size: 14px;
   font-weight: 700;
-  margin-bottom: 0;
+  line-height: 17px;
+  margin: 0;
 }
-.tarif-card-header img {
+
+.input-group-currency {
+  width: 186px;
+  display: flex;
+  border: 1px solid;
+}
+.input-group-currency input {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: #f5f5f7;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.input-group-currency input::-moz-placeholder {
+  padding-left: 15px;
+}
+.input-group-currency input::placeholder {
+  padding-left: 15px;
+}
+
+.input-group-append select {
+  width: 64px;
+  height: 40px;
+  border: none;
+  border-left: 1px solid rgb(175, 175, 170);
+  background-color: #f5f5f7;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 12px;
+}
+
+.form-cur-calc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.form-exc-note {
+  font-size: 10px;
+  color: black;
+  margin-top: 15px;
+}
+
+.daily-currency-info {
+  width: 180px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.daily-currency-info img {
   width: 16px;
   height: 16px;
 }
 
-.tarif-item {
-  width: 168px;
-  height: 43px;
-  color: black;
-  font-size: 12px;
-  padding: 0 !important;
-}
-.tarif-item span {
-  color: black;
-  font-size: 13px;
-  padding-left: 5px;
-  cursor: pointer;
+.daily-curren-bord {
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.tarif-item-row {
-  margin-top: 15px;
-  width: 515px;
-  padding-left: 10px;
-  margin-left: 0px;
-  border-bottom: 1px solid rgba(155, 155, 155, 0.3137254902);
+.currency-type {
+  border: 1px solid #e5e5e5;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
-.tarif-table-body {
-  padding: 25px !important;
-  width: 320px;
+.currency-card-info {
+  width: 1028;
+  height: 156px;
+  padding: 36px 54px;
+  background-color: white;
+  border-radius: 8px;
 }
-.tarif-table-body span {
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.price-2 {
-  display: flex;
-  justify-content: end;
+.currency-card-info p {
+  color: #767676;
 }
 
-.clicked {
-  color: #f05835;
-}
-.clicked span {
-  color: #f05835;
+.card-info-title {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 760px) {
@@ -370,7 +616,7 @@
     font-family: "Nunito Sans", sans-serif;
   }
   .customcontainer {
-    width: 375px;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -446,79 +692,4 @@
   .btn-close-mob-menu i {
     font-size: 25px;
   }
-  .tarif-block {
-    width: 355px;
-    height: 978px;
-    margin-left: 10px;
-  }
-  .tariff-main-pg {
-    height: 2013px !important;
-    background-color: #e5e5e5;
-  }
-  .tarif-head {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-  .tarif-head h4 {
-    font-size: 18px;
-  }
-  .tarif-breadcamp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    gap: 5px;
-    padding: 0;
-    margin: 0;
-    font-size: 11px;
-  }
-  .tarif-breadcamp a {
-    text-decoration: none;
-    color: black;
-  }
-  .slider-btn {
-    display: none;
-    gap: 8px;
-  }
-  .slider-btn button {
-    width: 30px;
-    height: 30px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: #f15834;
-    border-radius: 50px;
-  }
-  .tarif-table-main {
-    width: 515px;
-  }
-  .tarif-card-header {
-    width: 355px;
-  }
-  .tarif-table {
-    display: flex;
-    width: 355px;
-    border-bottom: 1px solid rgba(155, 155, 155, 0.3137254902);
-    justify-content: center;
-    align-items: center;
-  }
-  .tarif-table-body {
-    padding: 0 !important;
-    width: 150px !important;
-    height: 70px;
-    display: flex;
-    align-items: center;
-  }
-  .tarif-table-body span {
-    text-align: center;
-  }
-  .tarif-item-row {
-    width: 350px;
-  }
-  .tarif-card {
-    display: flex;
-    flex-direction: column;
-  }
-}/*# sourceMappingURL=tariff.css.map */
+}/*# sourceMappingURL=userpanel.css.map */

@@ -7,7 +7,7 @@
 
 
 .customcontainer{
-    width: 1519px;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: block;
@@ -322,8 +322,10 @@
           color: black;
           font-size: 13px;
           padding-left: 5px;
+          cursor: pointer;
         }
       }
+
       .tarif-item-row{
         margin-top: 15px;
         width: 515px;
@@ -344,7 +346,14 @@
         justify-content: end;
       } 
 
-
+      
+      .clicked{
+        color: #f05835;
+        span{
+          color: #f05835;
+        }
+      }
+      
 
   @media only screen and (max-width: 760px) {
     *{

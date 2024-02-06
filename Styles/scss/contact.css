@@ -6,7 +6,7 @@
 }
 
 .customcontainer {
-  width: 1519px;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: block;
@@ -269,14 +269,15 @@
 
 .contact-main-pg {
   width: 1030px;
-  height: 2622px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
 
 .contact-block-body {
   width: 1030px;
-  height: 2622px;
+  height: auto;
+  margin-bottom: 90px;
 }
 
 .contact-card-body {

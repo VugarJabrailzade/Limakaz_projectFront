@@ -55,3 +55,19 @@ $('.sertf-body').slick({
 			
 
   var tarifcards = document.querySelector(".tarif-card");
+
+  var tarifItem = document.querySelectorAll(".tarif-item");
+  var tarifItemZabrat = document.querySelector(".tarif-item-zabrat");
+
+  tarifItem.forEach(aTag=>{
+    aTag.addEventListener("click", (e)=>{
+      e.preventDefault();
+      if (aTag.classList.contains("clicked")) {
+        aTag.classList.remove("clicked");
+      }
+      else
+      {
+        aTag.classList.add("clicked");
+      }
+    })
+  })
