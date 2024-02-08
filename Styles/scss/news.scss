@@ -233,22 +233,70 @@
     border-radius: 10px;
   }
 
-  // TARIFF SECTION
-    .tariff-main-pg{
-        padding-top: 50px;
-        padding-bottom: 50px;
+  // NEWS SECTION
 
+  .news-card{
+    width: 330px;
+    height: 304px;
+    border-radius: 3px;
+    gap: 5px;
+    text-decoration: none;
+    img{
+      width: 310px;
+      height: 200px;
+      object-fit: contain;
+      box-sizing: border-box;
+    }
+  }
+    .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-top: 30px;
+    }
+    .card-text-head{
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+        padding-left: 25px;
+        text-decoration: none;
       }
-      .tarif-head{
+      .card-date{
+        margin-left: 8px;
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+      .news-card-1{
+        width: 328px;
+        height: 314px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 0;
+      } 
+      .news-block{
+        width: 1030px;
+        height: 999px;
+        display: flex; 
+        flex-direction: column;
+        gap: 18px;
+      }
+      
+      
+      .news-head{
         display: flex;
         justify-content: space-between;
+        margin-top: 45px;
         h4{
           font-weight: 700;
           padding-top: 10px;
-          font-size: 25px;
+          font-size: 16px;
         }
       }
-      .tarif-breadcamp{
+      .news-breadcamp{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -265,95 +313,19 @@
                 color: #f15834;
             }
         }
-      }
-      .slider-btn{
-        display: none;
-      }
-      .tarif-block{
-        width: 1030px;
-        height: 999px;
-        display: flex; 
-        flex-direction: column;
-        gap: 18px;
-      }
-      .tariff-card-left{
-        width: 515px;
-        height: 899px;
-        background-color: white;
-        border-radius: 6px;
-      }
-      .tariff-card-right{
-        width: 498px;
-        height: 899px;
-        background-color: white;
-        border-radius: 6px;
-      }
-      .tarif-card{
-        display: flex;
-        gap: 15px;
-        overflow: hidden;
-        border-radius: 6px;
-      }
-      .tarif-card-header{
-        width: 515px;
-        height: 70px;
-        display: flex;
-        padding: 24px 20px;
-        gap: 24px;
-        align-items: center;
-        border-bottom: 1px solid #9b9b9b50;
-        h3{
-          font-size: 20px;
-          font-weight: 700;
-          margin-bottom: 0;
-        }
-        img{
-          width: 16px;
-          height: 16px;
-        }
-      }
-      .tarif-item{
-        width: 168px;
-        height: 43px;
-        color: black;
-        font-size: 12px;
-        padding: 0 !important;
-        span{
-          color: black;
-          font-size: 13px;
-          padding-left: 5px;
-          cursor: pointer;
-        }
-      }
-
-      .tarif-item-row{
-        margin-top: 15px;
-        width: 515px;
-        padding-left: 10px;
-        margin-left: 0px;
-        border-bottom: 1px solid #9b9b9b50;
-      }
-      .tarif-table-body{
-        padding: 25px !important;
-        width: 320px;
-        span{
-        font-size: 18px;
-        font-weight: 800;    
-        }
-      }
-      .price-2{
-        display: flex;
-        justify-content: end;
       } 
-
-      
-      .clicked{
-        color: #f05835;
-        font-weight: 700;
-        span{
-          color: #f05835;
-        }
+      .card-row{
+        margin-left: 5px;
+        padding-top: 10px;
       }
+      .pagination{
+        margin-top: 30px;
+      }
+      .page-link{
+        color: black;
+      }
+    
+    
       
 
   @media only screen and (max-width: 760px) {
@@ -455,82 +427,27 @@
             }
         }
 
-        // TARIIFF RESPONSIVE SECTION
-        .tarif-block{
-            width: 355px;
-            height: 978px;
-            margin-left: 10px;
-          }
-          .tariff-main-pg{
-            height: 2013px !important;
-            background-color: #e5e5e5;
-        
-            }
-          .tarif-head{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            h4{
-                font-size: 18px;
-            }
-          }
-          .tarif-breadcamp{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            list-style-type: none;
-            gap: 5px;
-            padding: 0;
-            margin: 0;
-            font-size: 11px;
-            a{
-                text-decoration: none;
-                color: black;
-            }
-          }
-          .slider-btn{
-            display: none;
-            gap: 8px;
-            button{
-              width: 30px;
-              height: 30px;
-              border: none;
-              color: white;
-              cursor: pointer;
-              background-color: #f15834;
-              border-radius: 50px;
-            }
-          }
-          .tarif-table-main{
-            width: 515px;
-          }
-          .tarif-card-header{
-            width: 355px;
-          }
-          .tarif-table{
-            display: flex;
-            width: 355px;
-            border-bottom: 1px solid #9b9b9b50;
-            justify-content: center;
-            align-items: center;
-          }
-          .tarif-table-body{
-            padding: 0 !important;
-            width: 150px !important;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            span{
-              text-align: center;
-            }
-          }
-         .tarif-item-row{
-          width: 350px;
-         }
-         .tarif-card{
-            display: flex;
-            flex-direction: column;
-         }
+        // NEWS RESPONSIVE SECTION
+
+        .news-block{
+          height: auto;
+          width: 370px;
+        }
+       .card-row{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0;
+       }
+       .news-head{
+        padding-left: 15px;
+        padding-right: 15px;
+       }
+       .pagination{
+        padding-left: 20px;
+        margin-top: 0;
+        margin-bottom: 40px;
+       }
+       
 
 }

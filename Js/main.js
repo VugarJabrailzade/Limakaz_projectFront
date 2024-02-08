@@ -62,12 +62,14 @@ $('.sertf-body').slick({
   tarifItem.forEach(aTag=>{
     aTag.addEventListener("click", (e)=>{
       e.preventDefault();
-      if (aTag.classList.contains("clicked")) {
-        aTag.classList.remove("clicked");
-      }
-      else
-      {
-        aTag.classList.add("clicked");
-      }
+      aTag.classList.add("clicked");
+      console.log("salam")
+        
+        // Diğer öğelerden "clicked" sınıfını kaldırın
+        tarifItem.forEach(otherTag => {
+            if (otherTag !== aTag) {
+                otherTag.classList.remove("clicked");
+            }
+        });
     })
   })

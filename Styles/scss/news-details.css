@@ -233,22 +233,22 @@
   border-radius: 10px;
 }
 
-.tariff-main-pg {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.news-details-block {
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
-.tarif-head {
+.news-details-head {
   display: flex;
   justify-content: space-between;
 }
-.tarif-head h4 {
+.news-details-head h4 {
   font-weight: 700;
   padding-top: 10px;
-  font-size: 25px;
+  font-size: 16px;
 }
 
-.tarif-breadcamp {
+.news-details-breadcamp {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,109 +258,136 @@
   margin: 0;
   font-size: 14px;
 }
-.tarif-breadcamp a {
+.news-details-breadcamp a {
   text-decoration: none;
   color: black;
 }
-.tarif-breadcamp a:hover {
+.news-details-breadcamp a:hover {
   text-decoration: underline;
   color: #f15834;
 }
 
-.slider-btn {
-  display: none;
+.news-details-row {
+  padding-top: 30px;
 }
 
-.tarif-block {
-  width: 1030px;
-  height: 999px;
+.news-card-text {
+  width: 610px;
+}
+.news-card-text span {
+  font-size: 14px;
+}
+
+.news-card-title {
+  padding-left: 20px;
+  font-weight: 700;
+  padding-top: 25px;
+}
+
+.news-details-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+.news-card-date {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.news-card-date span {
+  font-size: 14px;
+  color: #636262;
+}
+
+.news-details-share-button {
+  text-decoration: none;
+}
+.news-details-share-button img {
+  width: 24px;
+  height: 25px;
+}
+
+.news-card-body {
+  padding: 30px;
+}
+
+.news-card {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-head {
+  width: 328px;
+  height: 55px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-head i {
+  color: #f15834;
+}
+
+.sidebar-head-text {
+  font-size: 16px;
+}
+
+.card-img-left {
+  width: 94px;
+  height: 63px;
+}
+
+.card-title {
+  font-size: 13px;
+  margin: 0;
+}
+
+.news-side-bar-article {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(99, 98, 98, 0.3960784314);
+}
+
+.news-sidebar-article-body {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 10px;
 }
 
-.tariff-card-left {
-  width: 515px;
-  height: 899px;
-  background-color: white;
-  border-radius: 6px;
-}
-
-.tariff-card-right {
-  width: 498px;
-  height: 899px;
-  background-color: white;
-  border-radius: 6px;
-}
-
-.tarif-card {
-  display: flex;
-  gap: 15px;
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.tarif-card-header {
-  width: 515px;
-  height: 70px;
-  display: flex;
-  padding: 24px 20px;
-  gap: 24px;
-  align-items: center;
-  border-bottom: 1px solid rgba(155, 155, 155, 0.3137254902);
-}
-.tarif-card-header h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-.tarif-card-header img {
-  width: 16px;
-  height: 16px;
-}
-
-.tarif-item {
-  width: 168px;
-  height: 43px;
-  color: black;
+.news-card-date-sidebar {
   font-size: 12px;
-  padding: 0 !important;
 }
-.tarif-item span {
-  color: black;
-  font-size: 13px;
-  padding-left: 5px;
-  cursor: pointer;
+.news-card-date-sidebar span {
+  color: #636262;
 }
 
-.tarif-item-row {
-  margin-top: 15px;
-  width: 515px;
-  padding-left: 10px;
-  margin-left: 0px;
-  border-bottom: 1px solid rgba(155, 155, 155, 0.3137254902);
-}
-
-.tarif-table-body {
-  padding: 25px !important;
-  width: 320px;
-}
-.tarif-table-body span {
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.price-2 {
+.backBtnBlock {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #f15834;
+  color: white;
+  margin-left: 270px;
+  margin-top: 20px;
 }
-
-.clicked {
-  color: #f05835;
+.backBtnBlock i {
+  color: white;
   font-weight: 700;
 }
-.clicked span {
-  color: #f05835;
+
+.backBtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 760px) {
@@ -447,79 +474,48 @@
   .btn-close-mob-menu i {
     font-size: 25px;
   }
-  .tarif-block {
-    width: 355px;
-    height: 978px;
+  .news-details-head {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .details-row {
     margin-left: 10px;
   }
-  .tariff-main-pg {
-    height: 2013px !important;
-    background-color: #e5e5e5;
-  }
-  .tarif-head {
+  .news-details-row {
+    width: 375px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+    gap: 20px;
   }
-  .tarif-head h4 {
-    font-size: 18px;
+  .news-card-text {
+    width: 310px;
   }
-  .tarif-breadcamp {
+  .news-card-text span {
+    font-size: 14px;
+  }
+  .news-card-body {
+    width: 320px;
+    padding: 20px;
+  }
+  .news-card-date {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    gap: 5px;
-    padding: 0;
-    margin: 0;
-    font-size: 11px;
+    justify-content: start;
   }
-  .tarif-breadcamp a {
-    text-decoration: none;
-    color: black;
-  }
-  .slider-btn {
-    display: none;
-    gap: 8px;
-  }
-  .slider-btn button {
-    width: 30px;
-    height: 30px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: #f15834;
-    border-radius: 50px;
-  }
-  .tarif-table-main {
-    width: 515px;
-  }
-  .tarif-card-header {
-    width: 355px;
-  }
-  .tarif-table {
-    display: flex;
-    width: 355px;
-    border-bottom: 1px solid rgba(155, 155, 155, 0.3137254902);
-    justify-content: center;
-    align-items: center;
-  }
-  .tarif-table-body {
-    padding: 0 !important;
-    width: 150px !important;
-    height: 70px;
-    display: flex;
-    align-items: center;
-  }
-  .tarif-table-body span {
-    text-align: center;
-  }
-  .tarif-item-row {
-    width: 350px;
-  }
-  .tarif-card {
+  .news-details-footer {
+    width: 320px;
     display: flex;
     flex-direction: column;
   }
-}/*# sourceMappingURL=tariff.css.map */
+  .news-sidebar-article-body {
+    padding-top: 10px;
+  }
+  .news-card {
+    height: 120px !important;
+  }
+  .news-side-bar-article {
+    padding: 20px;
+    height: 120px;
+  }
+  .backBtnBlock {
+    margin-left: 130px;
+  }
+}/*# sourceMappingURL=news-details.css.map */

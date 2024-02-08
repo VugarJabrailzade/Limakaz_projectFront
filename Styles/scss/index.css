@@ -99,6 +99,10 @@
   justify-content: center;
 }
 
+.outer-box-item1, .outer-box-item2, .outer-box-item3 {
+  padding-right: 10px;
+}
+
 .person-icon-mobile {
   display: none;
 }
@@ -466,6 +470,15 @@
   color: black;
   font-size: 13px;
   padding-left: 5px;
+  cursor: pointer;
+}
+
+.clicked {
+  color: #f05835;
+  font-weight: 700;
+}
+.clicked span {
+  color: #f05835;
 }
 
 .tarif-item-row {

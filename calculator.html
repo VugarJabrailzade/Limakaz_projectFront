@@ -274,8 +274,8 @@
                                                 <div class="col-6">
                                                     <div class="input-group">
                                                         <div>
-                                                            <input min="0" type="number" name="wight"
-                                                                placeholder="Çəki">
+                                                            <input  class="weight" min="0" type="number" name="weight"
+                                                                placeholder="Çəki" >
                                                         </div>
                                                         <div class="input-weight">
                                                             <button type="submit">
@@ -285,8 +285,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input class="input-count" type="number" name="count" min="0"
-                                                        placeholder="Bağlama sayı">
+                                                    <input class="input-count" type="number" name="count" min="1"
+                                                      value="1"  placeholder="Bağlama sayı">
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="input-group">
@@ -343,6 +343,12 @@
                                                         <i class="fa-solid fa-circle-info"></i>
                                                     </div>
                                                 </div>
+                                                <div id="tariff-data-turkey"
+                                                    data-azn-price="1.70"
+                                                    data-usd-price="1.00"
+                                                    data-onekg-azn-price="7.65"
+                                                    data-onekg-usd-price="4.50">
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -360,7 +366,7 @@
                                                 </div>
                                                 <form class="currency-calc-form">
                                                     <div class="input-group currency-input-calc">
-                                                        <input min="0" placeholder="0.0" type="number">
+                                                        <input class="currency-input1" min="0" placeholder="0.0" type="number">
                                                         <div>
                                                             <select class="currency-type">
                                                                 <option value="1">USD</option>
@@ -370,7 +376,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="input-group currency-input-calc">
-                                                        <input min="0" placeholder="0.0" type="number">
+                                                        <input class="currency-input2" min="0" placeholder="0.0" type="number">
                                                         <div>
                                                             <select class="currency-type">
                                                                 <option value="1">AZN</option>
@@ -553,6 +559,6 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="Js/main.js"></script>
+<script src="Js/calculator.js"></script>
 
 </html>
