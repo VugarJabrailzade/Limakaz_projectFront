@@ -1,0 +1,10 @@
+    
+    1) USERPANELIN responsivi yazilmalidi
+    2) Shifre berpasi sehifesi
+    3) Qeydiyyat sehifesi
+    4) modalda js ile shifrenin gorunub gorunmemesi                      ++++
+    5) Calculyator xlm ile request fetch
+    6) Search button hoverli elemek
+    7) kalkulyator sifirla buttona yazmaq                                 +++
+    8) mezenne hesablanmasini js ile bitirmek
+    9) mobil responsivde modal                                            +++

@@ -225,6 +225,17 @@ fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_ZKCy2YaxiNRZ2barsiz
 
 
   var inp = document.querySelector(".currency-input1")
-    var inp2 = document.querySelector(".currency-input2")
-    var currencyType = document.querySelector(".currency-type");
-    console.log(currencyType.children[1].value)
+  var inp2 = document.querySelector(".currency-input2")
+  var currencyType = document.querySelector(".currency-type");
+//   console.log(currencyType.children[1].value)
+
+ var resetBtn = document.querySelector(".calc-resetBtn");
+ var calcForm = document.querySelector(".form-calc");
+ 
+
+ resetBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    calcForm.reset();
+    total.innerHTML = "AZN 0.00 | $0.00"
+     })
+

@@ -363,6 +363,106 @@
   color: #f05835;
 }
 
+.modal-content {
+  width: 720px;
+  height: 530px;
+}
+
+#staticBackdrop {
+  padding-right: 160px;
+}
+
+.login {
+  padding-left: 50px;
+}
+
+.login-modal-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.login-modal-head-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.login-form-action {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login-email-input {
+  width: 280px;
+  height: 50px;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 1px solid #9b9b9b;
+  background-color: rgba(139, 139, 139, 0.1294117647);
+}
+.login-email-input:focus {
+  background-color: white;
+  outline-color: rgba(139, 139, 139, 0.1294117647);
+}
+
+.login-password-input {
+  position: relative;
+}
+
+.visibility-btn-password {
+  cursor: pointer;
+}
+
+.hide-eye {
+  background-image: url(https://limak.az/new_front/assets/img/icons/opened.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  padding: 12px;
+  left: 245px;
+  margin-top: 13px;
+}
+
+.text-right a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #706f6f;
+}
+
+.login-btn-modal {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #FC7B5D 0%, #F05835 100%);
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.register-btn-modal {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #D1DDE8 0%, #C3CBD3 100%);
+  font-weight: 700;
+  border-radius: 8px;
+}
+.register-btn-modal a {
+  text-decoration: none;
+  color: black;
+}
+
 @media only screen and (max-width: 760px) {
   * {
     margin: 0;
@@ -521,5 +621,105 @@
   .tarif-card {
     display: flex;
     flex-direction: column;
+  }
+  .modal-content {
+    width: 353px;
+    height: 700px;
+  }
+  #staticBackdrop {
+    padding-right: 160px;
+  }
+  .login {
+    padding-left: 0px;
+  }
+  .login-modal-head {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  .login-modal-head-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 10px;
+  }
+  .login-form-action {
+    margin-top: 50px;
+    display: flex;
+    padding-left: 5px;
+    flex-direction: column;
+  }
+  .login-email-input {
+    width: 310px;
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 15px;
+    border: 1px solid #9b9b9b;
+    background-color: rgba(139, 139, 139, 0.1294117647);
+  }
+  .login-email-input:focus {
+    background-color: white;
+    outline-color: rgba(139, 139, 139, 0.1294117647);
+  }
+  .login-password-input {
+    position: relative;
+  }
+  .visibility-btn-password {
+    cursor: pointer;
+  }
+  .hide-eye {
+    background-image: url(https://limak.az/new_front/assets/img/icons/opened.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    padding: 12px;
+    left: 269px;
+    margin-top: 9px;
+  }
+  .text-right a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #706f6f;
+  }
+  .login-btn-modal {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #FC7B5D 0%, #F05835 100%);
+    border: none;
+    color: white;
+    font-weight: 700;
+  }
+  .register-btn-modal {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #D1DDE8 0%, #C3CBD3 100%);
+    font-weight: 700;
+    border-radius: 8px;
+  }
+  .register-btn-modal a {
+    text-decoration: none;
+    color: black;
+  }
+  .remember-me-radio {
+    padding-left: 3px;
+  }
+  .modal-footer-Btn {
+    margin-right: 5px;
+  }
+  .modal-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=tariff.css.map */
