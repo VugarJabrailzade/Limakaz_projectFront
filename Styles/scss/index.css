@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +91,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 }
 
 .outer-box-item1, .outer-box-item2, .outer-box-item3, .outer-box-item4 {
@@ -269,6 +269,83 @@
   border: none;
   color: white;
   font-weight: 700;
+}
+
+.search-from {
+  width: 300px;
+  height: 50px;
+  display: flex;
+}
+
+.search-input {
+  width: 261px;
+  height: 50px;
+  right: 10px;
+  top: 67px;
+  position: absolute;
+  padding-left: 15px;
+  border: none;
+  background-color: #f5f5f7;
+}
+.search-input:focus {
+  outline: none;
+  background-color: white;
+}
+
+.search-input-icon {
+  position: relative;
+  top: 77px;
+  right: 25px;
+}
+
+.search-input-group {
+  position: relative;
+}
+
+.search-container {
+  position: absolute;
+  display: none;
+  height: 50px;
+}
+.search-container li {
+  list-style-type: none;
+}
+
+.search-icon-head {
+  padding: 0;
+}
+
+.search-link {
+  text-decoration: none;
+  color: black;
+  height: 67px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-link i {
+  padding-right: 5px;
+  padding-top: 2px;
+}
+
+.search-icon-head:hover .search-container {
+  display: block;
+  animation: slideUp 0.3s ease;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Başlangıç pozisyonu: aşağıda */
+  }
+  to {
+    transform: translateY(0); /* Bitiş pozisyonu: yukarıda */
+  }
+}
+.search-head-input {
+  display: none;
 }
 
 .markets-header h4 {
@@ -886,6 +963,19 @@ s .footer-app-mobile {
   }
   .slick-dots li button:before {
     font-size: 7px;
+  }
+  .search-input {
+    width: 270px;
+    height: 50px;
+    top: 67px;
+    position: absolute;
+    padding-left: 15px;
+    border: none;
+    background-color: #f5f5f7;
+  }
+  .search-input:focus {
+    outline: none;
+    background-color: white;
   }
   .market-main-pg {
     margin-top: 80px;

@@ -185,43 +185,60 @@ function hesablaAmercUsd(kg, kgUsdPriceAmerc){
 
 
 
-fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_ZKCy2YaxiNRZ2barsizYajkUr9n4enQC5Cn6Fc3M')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json(); // JSON verisini JavaScript nesnesine dönüştür
-  })
-  .then(data => {
-    // Alınan JSON verisinden "rates" alanındaki "EUR" değerini al
-    const usdRateCode = data.data.USD.code;
-    const usdRateValue = data.data.USD.value;
+// fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_ZKCy2YaxiNRZ2barsizYajkUr9n4enQC5Cn6Fc3M')
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok');
+//     }
+//     return response.json(); // JSON verisini JavaScript nesnesine dönüştür
+//   })
+//   .then(data => {
+//     // Alınan JSON verisinden "rates" alanındaki "EUR" değerini al
+//     const usdRateCode = data.data.USD.code;
+//     const usdRateValue = data.data.USD.value;
 
-    const aznRateCode = data.data.AZN.code;
-    const aznRateValue = data.data.AZN.value;
-    const tryRateCode = data.data.TRY.code;
-    const tryRateValue = data.data.TRY.value;
+//     const aznRateCode = data.data.AZN.code;
+//     const aznRateValue = data.data.AZN.value;
+//     const tryRateCode = data.data.TRY.code;
+//     const tryRateValue = data.data.TRY.value;
 
 
-    var inp = document.querySelector(".currency-input1")
-    var inp2 = document.querySelector(".currency-input2")
-    var currencyType = document.querySelector(".currency-type");
-    console.log(currencyType)
+//     var inp = document.querySelector(".currency-input1")
+//     var inp2 = document.querySelector(".currency-input2")
+//     var currencyType = document.querySelector(".currency-type");
+//     console.log(currencyType)
     
     
-    inp.addEventListener("input", (e)=>{
-        e.preventDefault();
-        var inpvalue = inp.value
-        var converterPrice = inpvalue*aznRateValue
-        inp2.value=converterPrice.toFixed(2)
-        console.log(converterPrice)
-    })
+//     inp.addEventListener("input", (e)=>{
+//         e.preventDefault();
+//         var inpvalue = inp.value
+//         var converterPrice = inpvalue*aznRateValue
+//         inp2.value=converterPrice.toFixed(2)
+//         console.log(converterPrice)
+//     })
 
 
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+//   })
+//   .catch(error => {
+//     console.error('There was a problem with the fetch operation:', error);
+//   });
+
+// var XMLRequest = new XMLHttpRequest();
+
+// XMLRequest.open('GET','https://www.cbar.az/currencies/08.02.2024.xml')
+
+// XMLRequest.send()
+
+// XMLRequest.onload = () =>{
+//     if(XMLRequest.status === 200){
+//         console.log("request succesfully")
+//     }
+//     else{
+//         console.log("Dont work")
+//     }
+
+//     console.log(JSON.parse(XMLRequest.response))
+// }
 
 
   var inp = document.querySelector(".currency-input1")
