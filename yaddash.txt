@@ -11,3 +11,14 @@
     10) orderde yeni link elave etmek( qiraga yazib sonra add)          
     11) register page terms modal baglananda classlist qalmagi          ----- (goster, eliye bilmedim)
     12) Card Page yeni Sebet, Basket                                    
+
+
+
+    Yazilmali olan pageler login olduqdan sonra
+    1) Sifarishler
+    2) Bildirishler
+    2) Baglamalar
+    3) Beyan gozleyen
+    4) Baglamalar
+    5) Xaricdeki Unvanlar
+    6) Tenzimlemeler

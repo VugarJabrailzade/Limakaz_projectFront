@@ -452,6 +452,10 @@
     border-radius: 12px;
     
   }
+  .dashboard-main-row{
+    display: flex;
+    row-gap: 20px;
+  }
   .dashboard-card-body{
     display: flex;
     flex-direction: column;
@@ -695,4 +699,72 @@
                 font-size: 25px;
             }
         }
+
+
+        // ISTIFADECI PANEL RESPONSIVE DESIGN MAIN PAGE
+
+        .userPanel-breadcamp{
+          padding-left: 5px;
+        }
+        .userPanel-head{
+          h4{
+            font-size: 18px;
+          }
+        }
+
+        .middle-panel{
+          width: 355px;
+          height: 900px;
+        }
+        .left-banner, .right-banner{
+          display: none;
+        }
+        .aside-card-body{
+          display: block;
+        }
+        .user-left-block{
+          display: none;
+        }
+        .panel-banner, .panel-banner-img{
+          width: 335px;
+          height: 60px;
+          margin: 0;
+          padding-left: 10px;
+        }
+        .dashboard, .log-content{
+          width: 355px;
+          height: 604px;
+        }
+        .dashboard-main-row{
+          display: flex;
+          flex-direction: column;
+          width: 355px;
+          height: 604px;
+          gap: 15px;          
+        }
+
+        .dashboard-card{
+          width: 156px;
+          height: 180px;
+        }
+        .dashboard-card-title{
+          text-align: center;
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+
+        // USER ICON MENU RESPONSIVE
+        .offcanvas{
+          width: 270px !important;
+        }
+        .offcanvas-body{
+          padding-top: 0;
+        }
+        .aside-card-mobile{
+          width: 250px;
+        }
+        
+
+
     }
