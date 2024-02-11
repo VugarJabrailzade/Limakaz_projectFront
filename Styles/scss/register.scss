@@ -322,11 +322,25 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+        }
+        b{
+          padding-left: 15px;
         }
     }
     .register-block-body{
         background-color: white;
+        border-radius: 8px;
+    }
+    .headfirstLetter{
+      color: #F05835;
+    }
+    .regr-breadcamp-tag{
+      text-decoration: none;
+      color: black;
+      &:hover{
+        text-decoration: underline;
+        color: #F05835;
+      }
     }
     .register-breadcamp{
         display: flex;
@@ -347,9 +361,11 @@
         padding: 60px 200px;
     }
     .form-title{
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 700;
         padding-left: 10px;
+        border-left: 5px solid #F05835;
+        margin-bottom: 25px;
     }
     .regr-form-select-person{
         width: 304px;
@@ -411,6 +427,9 @@
         border-radius: 8px;
         border: none;
         padding-left: 15px;
+        &:focus{
+          outline-color: #706f6f2a  ;
+        }
 
     }
     #password-confirmation-regr{
@@ -421,6 +440,9 @@
         border-radius: 8px;
         border: none;
         padding: 10px;
+        &:focus{
+          outline-color: #706f6f2a  ;
+        }
     }
 
     .hide-eye-pas{
@@ -453,6 +475,157 @@
     .notif-type-regr{
         padding-left: 10px;
     }
+    .form-con-second-row{
+        margin-top: 20px;
+    }
+
+
+    //REGISTER RIGHT SIDE
+    .select-nation-regr{
+      width: 304px;
+      height: 52px;
+      border-radius: 8px;
+      padding-left: 10px;
+      background-color: rgba(139, 139, 139, 0.1294117647);
+      border-color: rgba(112, 111, 111, 0.1647058824);
+    }
+    .serial-number{
+      margin-top: 24px;
+      width: 304px;
+      height: 52px;
+      border-radius: 8px;
+      padding-left: 10px;
+      background-color: rgba(139, 139, 139, 0.1294117647);
+      border-color: rgba(112, 111, 111, 0.1647058824);
+    }
+    
+    .date-input-regr{
+      margin-top: 24px;
+      width: 304px;
+      height: 52px;
+      border-radius: 8px;
+      padding-left: 10px;
+      background-color: rgba(139, 139, 139, 0.1294117647);
+      border-color: rgba(112, 111, 111, 0.1647058824);
+    }
+    .select-gender-regr{
+      margin-top: 25px;
+      width: 304px;
+      height: 52px;
+      border-radius: 8px;
+      padding-left: 10px;
+      background-color: rgba(139, 139, 139, 0.1294117647);
+      border-color: rgba(112, 111, 111, 0.1647058824);
+    }
+    .regr-fin-code{
+      margin-top: 23px;
+      width: 304px;
+      height: 52px;
+      border-radius: 8px;
+      padding-left: 10px;
+      background-color: rgba(139, 139, 139, 0.1294117647);
+      border-color: rgba(112, 111, 111, 0.1647058824);
+      position: relative;
+    }
+    #Fin{
+      position: relative;
+      margin-left: 278px;
+      bottom:36px;
+      text-decoration: none;
+      color: #706f6f;
+      width: 20px;
+      height: 20px;
+      
+    }
+    #regr-adress{
+      margin-bottom: 15px;
+      width: 304px;
+      height: 52px;
+      border-radius: 8px;
+      padding-left: 10px;
+      background-color: rgba(139, 139, 139, 0.1294117647);
+      border-color: rgba(112, 111, 111, 0.1647058824);
+    }
+
+    //Modal Fin Passport Images
+    .passport-modal{
+      width: 1138px !important;
+      height: 788px !important;
+    }
+    .pas-img-dialog{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .passport-images{
+      img{
+        width: 542px;
+        height: 362px;
+      }
+    }
+    #terms-link{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .form-regr-footer{
+      width: 640px;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin-top: 15px;
+    }
+    .form-check-checkbox{
+      padding-left: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .regr-btn{
+      width: 320px;
+      height: 50px;
+      background: linear-gradient(180deg,#FC7B5D 0%,#F05835 100%);
+      border: none;
+      font-weight: 700;
+    }
+    
+
+    // MODAL TERMS AND AGREMENT
+    .modal-terms-title{
+      border-left: 6px solid #F05835;
+      font-weight: 700;
+      padding-left: 15px;
+      font-size: 40px;
+    }
+    .terms-modal-dialog{
+      margin: 0;
+      margin-left: 250px;
+      margin-top: 50px;
+    }
+    .terms-modal-body{
+      width: 1106px;
+      height: 330px ;
+    }
+    .terms-modal-content{
+      width: 1106px !important;
+      height: 330px;
+    }
+    .reminder-modal-btn{
+     display: flex;
+     justify-content: end;
+    }
+    .btn-terms-agree{
+      background-color: #F05835;
+      border: none;
+      width: 96px;
+      height: 50px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 700;
+
+    }
+
     
 
  // LOG IN MODAL DESIGN
@@ -498,7 +671,7 @@
   .login-password-input{
     position: relative;
   }
-  .visibility-btn-password{
+  .visibility-btn-new-password, .visibility-btn-password-confirm{
     cursor: pointer;
   }
   .hide-eye{
@@ -563,6 +736,9 @@
       .middlecontainer{
         max-width: 100%;
         width: 100%;
+    }
+    .middlecontainer{
+      height: 1450px;
     }
     
 
@@ -663,113 +839,267 @@
         }
 
 
-        // CALCULATOR SECTION RESPONSIVE
+        // REGISTER FORM SECTION RESPONSIVE
 
+        .register-block-body{
+          width: 355px;
+          height: 1328px;
+        }
+        .register-main-pg{
+          width: 355px;
+          height: 1228px;
+        }
+        .register-block{
+          width: 355px;
+          height: 1228px;
+          padding: 10px;
+        }
+        .register-card{
+          width: 313px;
+          height: 1228px;
+          padding: 20px;
+        }
+        .register-card-head{
+          width: 313px;
+        }
+        .register-head{
+          width: 355px;
+          height: 18px;
+          margin-top: 15px;
+          h4{
+            font-size: 14px;
+            font-weight: 800;
+          }
+        }
+        .register-breadcamp{
+          font-size: 12px;
+        }
+        .form-regr{
+          width: 313px;
+          height: 1228px;
+          display: flex;
+          flex-direction: column;
+          z-index: 15;
+        }
+        .form-con-first-row{
+          display: flex;
+          flex-direction: column;
+        }
+        .form-con-second-row{
+          margin-top: 100px;
+        }
+        .form-regr-main-row{
+          display: flex;
+          flex-direction: column;
+        }
+        #password-regr{
+          width: 303px;
+          height: 40px;
+        }
+        #password-confirmation-regr{
+          width: 303px;
+          height: 40px;
+        }
+        .regr-phone-group{
+          width: 303px;
+        }
+        .reg-name, .reg-surname, .reg-email{
+          height: 40px;
+        }
+        .dropdown-select-prefix, .reg-phoneNum{
+          height: 40px;
+        }
+        .delivary-office-regr, .notif-type-regr, .regr-form-select-person{
+          width: 303px;
+          height: 40px;
+        }
+        .select-nation-regr, .serial-number, .date-input-regr, .select-gender-regr, .regr-fin-code{
+          height: 40px;
+        }
+        #regr-adress{
+          height: 40px;
+        }
+        .form-regr-footer{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 25px;
+          height: 100px;
+        }
+        .form-check-checkbox{
+          padding: 0;
+        }
+        .regr-btn{
+          width: 303px;
+          padding-left: 15px;
+        }
+        
+        
+        // MODAL TERMS AND AGREEMETN RESPONSIVE
+
+        .modal-terms-title{
+          border-left: 6px solid #F05835;
+          font-weight: 700;
+          padding-left: 15px;
+          font-size: 40px;
+        }
+        .terms-modal-dialog{
+          margin: 0;
+          margin-top: 50px;
+        }
+        .terms-modal-body{
+          width: 368px !important;
+          height: 1153px !important;
+        }
+        .terms-modal-content{
+          width: 368px !important;
+          height: 1153px !important;
+        }
+        .reminder-modal-btn{
+         display: flex;
+         justify-content: end;
+        }
+        .reminder-modal{
+          ul{
+            padding-left: 10px;
+          }
+        }
+        .btn-terms-agree{
+          background-color: #F05835;
+          border: none;
+          width: 96px;
+          height: 50px;
+          border-radius: 8px;
+          color: white;
+          font-weight: 700;
+    
+        }
+
+
+
+        //Modal Fin Passport Images RESPONSIVE
+        .passport-modal{
+          width: 368px !important;
+          height: 1000px !important;
+        }
+        .pas-img-dialog{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .passport-images{
+          img{
+            width: 334px;
+            height: 223px;
+          }
+        }
         
 
+
         // MODAL RESPONSIVE LOG IN MODAL DESIGN
-   .modal-content{
-    width: 353px;
-    height: 700px;
-  }
-  #staticBackdrop{
-    padding-right: 160px;
-  }
-  .login{
-    padding-left: 0px;
-  }
-  .login-modal-head{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 0px;
-    padding-left: 10px;
-  }
-  .login-modal-head-title{
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    padding-left: 10px;
-  }
-  .login-form-action{
-    margin-top: 50px;
-    display: flex;
-    padding-left: 5px;
-    flex-direction: column;
-  }
-  .login-email-input{
-    width: 310px;
-    height: 40px;
-    border-radius: 8px;
-    padding-left: 15px;
-    border: 1px solid #9b9b9b;
-    background-color: #8b8b8b21;
-    &:focus{
-      background-color: white;
-      outline-color: #8b8b8b21;
-    }
-  }
-  .login-password-input{
-    position: relative;
-  }
-  .visibility-btn-password{
-    cursor: pointer;
-  }
-  .hide-eye{
-    background-image: url(https://limak.az/new_front/assets/img/icons/opened.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    padding: 12px;
-    left: 269px;
-    margin-top: 9px;
-    
-  }
-  .text-right{
-    a{
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 14px;
-      color: #706f6f;
-    }
-  }
-  .login-btn-modal{
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    background: linear-gradient(180deg,#FC7B5D 0%,#F05835 100%);
-    border: none;
-    color: white;
-    font-weight: 700;
-  }
-  .register-btn-modal{
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg,#D1DDE8 0%,#C3CBD3 100%);
-    font-weight: 700;
-    border-radius: 8px;
-    a{
-      text-decoration: none;
-      color: black;
-    }
-  }
-  .remember-me-radio{
-    padding-left: 3px;
-  }
-  .modal-footer-Btn{
-    margin-right: 5px;
-  }
-  .modal-card-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+        .modal-content{
+          width: 353px;
+          height: 700px;
+        }
+        #staticBackdrop{
+          padding-right: 160px;
+        }
+        .login{
+          padding-left: 0px;
+        }
+        .login-modal-head{
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin-top: 0px;
+          padding-left: 10px;
+        }
+        .login-modal-head-title{
+          font-size: 18px;
+          font-weight: 700;
+          margin: 0;
+          padding-left: 10px;
+        }
+        .login-form-action{
+          margin-top: 50px;
+          display: flex;
+          padding-left: 5px;
+          flex-direction: column;
+        }
+        .login-email-input{
+          width: 310px;
+          height: 40px;
+          border-radius: 8px;
+          padding-left: 15px;
+          border: 1px solid #9b9b9b;
+          background-color: #8b8b8b21;
+          &:focus{
+            background-color: white;
+            outline-color: #8b8b8b21;
+          }
+        }
+        .login-password-input{
+          position: relative;
+        }
+        .visibility-btn-new-password, .visibility-btn-password-confirm{
+          cursor: pointer;
+        }
+        .hide-eye{
+          background-image: url(https://limak.az/new_front/assets/img/icons/opened.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          padding: 12px;
+          left: 269px;
+          margin-top: 9px;
+          
+        }
+        .text-right{
+          a{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            color: #706f6f;
+          }
+        }
+        .login-btn-modal{
+          width: 150px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          background: linear-gradient(180deg,#FC7B5D 0%,#F05835 100%);
+          border: none;
+          color: white;
+          font-weight: 700;
+        }
+        .register-btn-modal{
+          width: 150px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(180deg,#D1DDE8 0%,#C3CBD3 100%);
+          font-weight: 700;
+          border-radius: 8px;
+          a{
+            text-decoration: none;
+            color: black;
+          }
+        }
+        .remember-me-radio{
+          padding-left: 3px;
+        }
+        .modal-footer-Btn{
+          margin-right: 5px;
+        }
+        .modal-card-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         
 }

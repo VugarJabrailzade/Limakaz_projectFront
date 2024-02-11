@@ -1,11 +1,13 @@
     
     1) USERPANELIN responsivi yazilmalidi
     2) Shifre berpasi sehifesi                                          +++++
-    3) Qeydiyyat sehifesi                                               
-    4) modalda js ile shifrenin gorunub gorunmemesi                      ++++
+    3) Qeydiyyat sehifesi                                               +++++  
+    4) modalda js ile shifrenin gorunub gorunmemesi                     +++++
     5) Calculyator xlm ile request fetch                                ----- (cbar ishlemedi)
-    6) Search button hoverli elemek                                     ++++++
-    7) kalkulyator sifirla buttona yazmaq                                 +++
-    8) mezenne hesablanmasini js ile bitirmek                            ----
-    9) mobil responsivde modal                                            +++
+    6) Search button hoverli elemek                                     +++++
+    7) kalkulyator sifirla buttona yazmaq                               +++++
+    8) mezenne hesablanmasini js ile bitirmek                           -----
+    9) mobil responsivde modal                                          +++++
     10) orderde yeni link elave etmek( qiraga yazib sonra add)          
+    11) register page terms modal baglananda classlist qalmagi          ----- (goster, eliye bilmedim)
+    12) Card Page yeni Sebet, Basket                                    
