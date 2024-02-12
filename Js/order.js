@@ -21,19 +21,26 @@ checkKargoTrue.forEach((radio)=>{
 
 var newLinkBtn = document.querySelector(".link-button")
 var cardBody = document.querySelector(".tab-content")
+var fullCardBody = document.querySelector(".order-card-body");
+var cardContaner = document.querySelector(".extraTabContent");
+var trtapPane = document.getElementById("1")
+console.log(trtapPane)
+var tabpane = document.querySelectorAll(".tab-pane")
 
 
-newLinkBtn.addEventListener("click", (e)=>{
+
+
+newLinkBtn.addEventListener("click", (e) => {
     e.preventDefault();
+    
+    tabpane.forEach((element) => {
+        if (element.classList.contains("active")) {
+            var tabContent = trtapPane.innerHTML;
+            cardContaner.innerHTML = tabContent;
+        }
+    });
+});
 
-    var newCard = cardBody.cloneNode(true)
-    console.log(newCard)
-
-    var cardContaner = document.querySelector(".extraTabContent");
-    cardContaner.appendChild(newCard)
-
-    console.log("yoxladindi")
-})
 
 var paymentInputSidebar = document.querySelectorAll(".custom-payment-input")
 var paymentBtn = document.querySelector(".payment-btn")
