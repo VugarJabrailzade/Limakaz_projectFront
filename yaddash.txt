@@ -1,5 +1,5 @@
     
-    1) USERPANELIN responsivi yazilmalidi
+    1) USERPANELIN responsivi yazilmalidi                               +++++
     2) Shifre berpasi sehifesi                                          +++++
     3) Qeydiyyat sehifesi                                               +++++  
     4) modalda js ile shifrenin gorunub gorunmemesi                     +++++
@@ -15,8 +15,8 @@
 
 
     Yazilmali olan pageler login olduqdan sonra
-    1) Sifarishler
-    2) Bildirishler
+    1) Sifarishler                                                      +++++
+    2) Bildirishler                                                     +++++
     2) Baglamalar
     3) Beyan gozleyen
     4) Baglamalar
