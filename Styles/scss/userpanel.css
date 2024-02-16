@@ -613,6 +613,68 @@
   font-weight: 700;
 }
 
+.modal-footer-logout {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.btn-xeyr {
+  width: 194px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(180deg, #f15834 0%, #f15834 100%);
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+}
+.btn-xeyr:hover {
+  background-color: #f15834;
+}
+
+.btn-beli {
+  width: 194px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(180deg, #55b3ff 0%, #058fff 100%);
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+}
+
+.modal-logout-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px;
+  border-bottom: 1px solid rgba(55, 55, 54, 0.1960784314);
+}
+
+.logout-modal-title {
+  color: black;
+  border-left: 5px solid #f15834;
+  padding-left: 15px;
+}
+
+.logout-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.logout-modal-content img {
+  width: 156px;
+  height: 167px;
+}
+
+.logout-content-title {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+}
+
 @media only screen and (max-width: 760px) {
   * {
     margin: 0;
@@ -750,5 +812,12 @@
   }
   .aside-card-mobile {
     width: 250px;
+  }
+  .btn-xeyr, .btn-beli {
+    width: 150px;
+    height: 50px;
+  }
+  .modal-backdrop {
+    display: none;
   }
 }/*# sourceMappingURL=userpanel.css.map */

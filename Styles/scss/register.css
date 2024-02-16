@@ -651,6 +651,10 @@
   font-weight: 700;
 }
 
+.modal-backdrop {
+  display: none;
+}
+
 .modal-content {
   width: 720px;
   height: 530px;

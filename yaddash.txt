@@ -9,7 +9,7 @@
     8) mezenne hesablanmasini js ile bitirmek                           -----
     9) mobil responsivde modal                                          +++++
     10) orderde yeni link elave etmek( qiraga yazib sonra add)          ----- (alindira bilmedim)
-    11) register page terms modal baglananda classlist qalmagi          ----- (goster, eliye bilmedim)
+    11) register page terms modal baglananda classlist qalmagi          +++++ 
     12) Card Page yeni Sebet, Basket                                    -----
 
 

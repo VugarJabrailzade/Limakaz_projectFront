@@ -499,62 +499,62 @@
     padding: 20px !important;
   }
   
-  .form-calc-title{
-    display: flex;
-    align-items: center;
-    color: black;
-    gap: 15px;
-    h3{
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        margin: 0;
+    .form-calc-title{
+      display: flex;
+      align-items: center;
+      color: black;
+      gap: 15px;
+      h3{
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 17px;
+          margin: 0;
 
+      }
     }
-  }
-  .input-group-currency{
-    width: 186px;
-    display: flex;
-    border: 1px solid ;
-    input{
-        width: 120px;
-        height: 40px;
-        border: none;
-        background-color: #f5f5f7;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        &::placeholder{
-            padding-left: 15px;
-        }
-       
+    .input-group-currency{
+      width: 186px;
+      display: flex;
+      border: 1px solid ;
+      input{
+          width: 120px;
+          height: 40px;
+          border: none;
+          background-color: #f5f5f7;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          &::placeholder{
+              padding-left: 15px;
+          }
+        
+      }
     }
-  }
-  .input-group-append{
-    select{
-        width: 64px;
-        height: 40px;
-        border: none;
-        border-left: 1px solid rgb(175, 175, 170);
-        background-color: #f5f5f7;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        padding-left: 12px;
+    .input-group-append{
+      select{
+          width: 64px;
+          height: 40px;
+          border: none;
+          border-left: 1px solid rgb(175, 175, 170);
+          background-color: #f5f5f7;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          padding-left: 12px;
+      }
     }
-  }
-  .form-cur-calc{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    gap: 15px;
-  }
-  .form-exc-note{
-    font-size: 10px;
-    color: black;
-    margin-top: 15px;
-  }
+    .form-cur-calc{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 15px;
+    }
+    .form-exc-note{
+      font-size: 10px;
+      color: black;
+      margin-top: 15px;
+    }
     .daily-currency-info{
         width: 180px;
         height: 48px;
@@ -590,7 +590,63 @@
     font-weight: 700;
     }
 
-  
+    // LOGOUT MODAL DESIGN
+    .modal-footer-logout{
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    .btn-xeyr{
+      width: 194px;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(180deg,#f15834 0%,#f15834 100%);
+      border-radius: 8px;
+      border: none;
+      font-weight: 700;
+      &:hover{
+      background-color: #f15834;
+
+      }
+    }
+    .btn-beli{
+      width: 194px;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(180deg,#55b3ff 0%,#058fff 100%);
+      border-radius: 8px;
+      border: none;
+      font-weight: 700;
+    }
+    .modal-logout-head{
+      display: flex;
+      justify-content: space-between;
+      padding: 26px;
+      border-bottom: 1px solid #37373632;
+    }
+    .logout-modal-title{
+      color: black;
+      border-left: 5px solid #f15834;
+      padding-left: 15px;
+    }
+    .logout-modal-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      img{
+        width: 156px;
+        height: 167px;
+      }
+    }
+    .logout-content-title{
+      color: black;
+      font-size: 18px;
+      font-weight: 800;
+    }
   
 
   
@@ -763,6 +819,15 @@
         }
         .aside-card-mobile{
           width: 250px;
+        }
+
+        // LOGOUT MODAL MOBILE RESPONSIVE
+        .btn-xeyr, .btn-beli{
+          width: 150px;
+          height: 50px;
+        }
+        .modal-backdrop{
+          display: none;
         }
         
 

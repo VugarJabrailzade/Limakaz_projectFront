@@ -717,7 +717,7 @@
             width: 7px;
             top: -2px;
             bottom: 0;
-            left: 5px;
+            left: 55px;
             margin: auto 0;
             border: 0px solid #AFAFAF;
             border-width: 0px 2px 2px 0;
@@ -1178,6 +1178,41 @@
         }
 
         
+
+
+        // BAGLAMALAR MODAL TRACKING ROAD RESPONSIVE MOBILE
+
+        .track-road-row{
+            padding: 0;
+            display: flex;
+            width: 300px;
+            margin-left: 40px;
+        }
+        .track-anbr{
+            margin: 0;
+        }
+        .pt45{
+            margin-left: 55px;
+            margin: 0;
+        }
+        .track-road-row{
+            gap: 10px;
+        }
+        .trackng-modal-table{
+            width: 331px !important;
+            height: 144px;
+        }
+        .track-modal-title-tr{
+            width: 331px !important;
+            height: 144px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding-left: 10px;
+        }
+        .track-sfrs-markt{
+            width: 150px;
+        }
 
 
 
