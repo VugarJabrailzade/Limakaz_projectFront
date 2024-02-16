@@ -21,4 +21,4 @@
     4) Beyan gozleyen
     5) Xaricdeki Unvanlar
     6) Tenzimlemeler
-    7) BAGLAMALAR RESPONSIVDE QALDIM SONUNCU
+    7) BAGLAMALAR RESPONSIVDE QALDIM SONUNCU                            +++++
