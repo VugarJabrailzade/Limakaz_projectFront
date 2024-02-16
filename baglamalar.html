@@ -371,7 +371,7 @@
                                                                     <th scope="col" class="text-end">Əməliyyat</th>
                                                                 </tr>
                                                             </thead>
-                                                            <tbody>
+                                                            <tbody class="tbody-reponsive">
                                                                 <tr class="bagl-ord-body">
                                                                     <td class="mobile-none paymt-icon">
                                                                         <i title="Ödənilib"
@@ -381,7 +381,7 @@
                                                                         <p class="td-title visibility-mobile">
                                                                             <strong>Sifariş№</strong>
                                                                         </p>
-                                                                        <div>
+                                                                        <div class="mobile-sfrs-title">
                                                                             <div class="visibility-mobile">
                                                                                 <i title="Ödənilib"
                                                                                     class="fa-regular fa-square-check"></i>
@@ -423,7 +423,7 @@
                                                                 </tr>
                                                                 <tr class="package-details">
                                                                     <td colspan="6">
-                                                                        <div class="collapse" id="collapseExample">
+                                                                        <div class="collapse collapse-mobile" id="collapseExample">
                                                                             <table class="mobile-collapse-table">
                                                                                 <tbody>
                                                                                     <tr class="collps-body">
@@ -578,16 +578,21 @@
                                                                 </tr>
                                                                 <tr class="b-border">
                                                                     <td class="visibility-mobile">
-                                                                        <div class="d-flex">
-                                                                            <button type="button"
-                                                                                class="btn btn-primary">
+                                                                        <div class="mobile-card-btns">
+                                                                            <button data-bs-toggle="collapse"
+                                                                                    href="#collapseExample" role="button"
+                                                                                    aria-expanded="true"
+                                                                                    aria-controls="collapseExample"
+                                                                                    type="button"
+                                                                                    class="mobile-card-btn-first">
                                                                                 <span>Bax</span>
                                                                             </button>
-                                                                            <button type="button"
-                                                                                class="btn btn-primary">
-                                                                                İzlə
+                                                                            <button type="submit"
+                                                                                                data-bs-toggle="modal"
+                                                                                                data-bs-target="#trackingBackdrop"
+                                                                                                class="btn btn-primary mobile-card-btn-second">
+                                                                                                İzlə
                                                                             </button>
-
                                                                         </div>
                                                                     </td>
                                                                 </tr>

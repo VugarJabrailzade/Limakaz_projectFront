@@ -1080,6 +1080,105 @@
   }
   .visibility-mobile {
     display: block;
+    margin: 0;
+  }
+  .bagl-table {
+    width: 333px !important;
+    height: 195px;
+    border-collapse: collapse;
+  }
+  .bgl-magza-title {
+    width: 166px;
+    height: 96px;
+    padding: 25px 20px;
+  }
+  .bgl-nom-body {
+    width: 166px;
+  }
+  .mobile-sfrs-title {
+    display: flex;
+  }
+  .bgl-karg-price-body {
+    width: 166px !important;
+    height: 99px;
+    padding: 25px 10px;
+  }
+  .bgl-magza-title {
+    width: 166px;
+    height: 96px;
+    padding: 25px 20px;
+    text-align: start;
+  }
+  .bgl-status-title {
+    width: 166px;
+    height: 96px;
+    padding: 25px 10px;
+    text-align: start;
+  }
+  .mobile-card-btns {
+    display: flex;
+    gap: 15px;
+    width: 333px;
+    height: 80px;
+    padding: 15px 10px;
+  }
+  .mobile-card-btn-first {
+    width: 141px;
+    height: 30px;
+    color: white;
+    background-color: #f58d75;
+    border: none;
+    border-radius: 8px;
+  }
+  .mobile-card-btn-second {
+    width: 141px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  .collapse-mobile {
+    width: 584px !important;
+    height: 441px;
+  }
+  .collps-body {
+    width: 584px;
+    height: 198px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mobile-collapse-table {
+    width: 584px !important;
+    height: 441px;
+  }
+  .sfr-colp-title {
+    width: 280px;
+    height: 113px;
+  }
+  .weight-colp-title {
+    width: 280px;
+    height: 113px;
+  }
+  .price-colp-title, .track-code-colp-title {
+    width: 280px;
+    height: 113px;
+    text-align: start;
+  }
+  .collps-body-footer {
+    width: 584px;
+    height: 198px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .count-collps-title {
+    text-align: start;
+  }
+  .prodct-name-colps-title, .count-collps-title {
+    width: 280px;
+    height: 113px;
+  }
+  .modal-content {
+    width: 375px;
   }
   .modal-content {
     width: 353px;
