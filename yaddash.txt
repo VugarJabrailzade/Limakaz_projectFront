@@ -17,7 +17,7 @@
     Yazilmali olan pageler login olduqdan sonra
     1) Sifarishler                                                      +++++
     2) Bildirishler                                                     +++++
-    3) Baglamalar                                                       +++++ (Responsive qaldi + user icon)
+    3) Baglamalar                                                       +++++ 
     4) Beyan gozleyen
     5) Xaricdeki Unvanlar
     6) Tenzimlemeler

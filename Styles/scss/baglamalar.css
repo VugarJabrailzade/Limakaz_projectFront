@@ -1211,6 +1211,9 @@
   .track-sfrs-markt {
     width: 150px;
   }
+  .logout-bgl-modal {
+    height: 428px !important;
+  }
   .modal-content {
     width: 353px;
     height: 700px;
