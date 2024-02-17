@@ -16,7 +16,6 @@
         max-width: 1050px;
         width: 1050px;
         margin: 0 auto;
-        height: 100%;
     }
     .main-middle-content{
         background-color: #e5e5e5;
@@ -280,9 +279,7 @@
     }
 
     .order-main-pg{
-        width: 744px;
-        height: 100%;
-        padding-bottom: 70px;
+        height: 1000px;
     }
     
     // ORDER HEAD BREADCAMP STYLE
@@ -306,32 +303,21 @@
     }
     .card-order-item{
         width: 724px;
-        height: 83px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: white;
         border-radius: 8px;
         margin-top: 25px;
     }
-    .bagl-item-title{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 800;
-    }
-    .bagl-header-block{
+    
+    .sifr-header-block{
         width: 724px;
-        height: 80px;
+        height: 45px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding-left: 25px;
-        padding-right: 25px;
         margin-bottom: 15px;
-        background-color: white;
-        border-radius: 8px;
-        margin-top: 15px;
     }
     .btn-refresh{
         width: 135px;
@@ -421,351 +407,6 @@
     .search-head-input{
     display: none;
     }
-
-
-        // BAGLAMALAR TABLE BODY
-        .visibility-mobile{
-            display: none;
-        }
-        .bgl-body-content{
-            width: 754px;
-        }
-        
-        .card-order-item{
-            height: 100%;
-        }
-        .bagl-table-responsive{
-            width: 100% !important;
-            overflow-x: auto;
-        }
-        .bagl-item-title{
-            width: 724px;
-        }
-        .bagl-table{
-            width: 820px;
-        }
-        .bg-table-head-title{
-            text-align:  center;
-        }
-        .bgl-head-icn{
-            width: 75px !important;
-            height: 72px;
-            padding: 25px 20px;
-        }
-        .sifrs-title{
-            width: 131px;
-            height: 74px;
-            padding: 25px 20px;
-            font-weight: 800;
-        }
-        .ctrilma-title{
-            width: 151px;
-            height: 74px;
-            padding: 25px 20px;
-            font-weight: 800;
-
-        }
-        .markt-title{
-            width: 214px;
-            height: 74px;
-            padding: 25px 20px;
-            font-weight: 800;
-
-        }
-        .stats-title{
-            width: 136px;
-            height: 74px;
-            padding: 25px 20px;
-            font-weight: 800;
-
-        }
-        .text-end{
-            width: 111px;
-            height: 74px;
-            padding: 25px 20px;
-            font-weight: 800;
-
-        }
-        
-        .paymt-icon{
-            width: 75px !important;
-            height: 72px;
-            padding: 25px 20px;
-            text-align: center;
-            color: green;
-        }
-        .bagl-ord-body{
-            border-top: 1px solid #706f6f4d;
-        }
-
-        .bgl-karg-price-body{
-            width: 201px !important;
-            height: 74px;
-            padding: 25px 20px;
-            font-weight: 600;
-        }
-        .bgl-magza-title{
-            width: 214px;
-            height: 71px;
-            padding: 25px 20px;
-            text-align: center;
-            font-weight: 600;
-        }
-        .bgl-nom-body{
-            padding: 25px 20px;
-            font-weight: 600;
-
-        }
-        .bgl-status-title{
-            width: 136px;
-            height: 71px;
-            padding: 25px 20px;
-            text-align: center;
-            font-weight: 600;
-        }
-        .bgl-more-btn{
-            width: 111px;
-            height: 71px;
-            text-align: center;
-            font-weight: 600;
-            padding: 25px 20px;
-        }
-        .btn-more-collapse{
-            width: 50px;
-            height: 21px;
-            background-color: #F05835;
-            color: white;
-            border-radius: 8px;
-            text-align: centers;
-            border: none;
-        }
-        
-        // COLLAPSE BODY DESIGN
-        .mobile-collapse-table{
-            width: 1000px;
-            height: 203px;
-            background-color: #eaeafb;
-            border-bottom: 1px solid #cfcfec;
-        }
-        .collps-body-footer{
-            border-top: 1px solid #23233130;
-        }
-        .collps-body, .collps-body-footer{
-            display: flex;
-        }
-        .sfr-colp-title{
-            width: 280px;
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            padding: 25px 20px;
-            span{
-                font-weight: 600;
-            }
-        }
-        .weight-colp-title{
-            width: 83px;
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            padding: 25px 20px;
-            span{
-                font-weight: 600;
-            }
-        }
-        .price-colp-title{
-            width: 203px;
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            padding: 25px 20px;
-            text-align: center;
-            span{
-                font-weight: 600;
-            }
-        }
-        .track-code-colp-title{
-            width: 303px;
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            padding: 25px 20px;
-            text-align: center;
-            span{
-                font-weight: 600;
-            }
-        }
-        .prodct-name-colps-title{
-            width: 303px;
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            padding: 25px 20px;
-            span{
-                font-weight: 600;
-            }
-        }
-        .count-collps-title{
-            width: 103px;
-            text-align: center;
-            font-size: 14px;
-            padding: 25px 20px;
-            
-        }
-        .proct-link-colps-title{
-            width: 303px;
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            padding: 25px 20px;
-            text-align: center;
-        }
-        .track-status-btn{
-            width: 223px;
-            font-size: 14px;
-            padding: 25px 20px;
-            margin-left: 20px;
-            text-align: center;
-        }
-        
-        // TRACKING MODAL DESIGN
-
-        .track-modal-title{
-            font-weight: 700;
-            font-size: 20px;
-            border-left: 5px solid #f05835;
-            padding-left: 15px;
-        }
-        
-        .trackng-modal-table{
-            width: 710px;
-            
-        }
-        .track-modal-title-tr{
-            display: flex;
-            width: 710px;
-
-        }
-        .track-sfrs-num{
-            width: 141px;
-            height: 72px;
-            display: flex;
-            flex-direction: column;
-            span{
-                font-weight: 600;
-            }
-        }
-        .track-sfrs-date, .track-srfs-stats{
-            width: 151px;
-            height: 72px;
-            display: flex;
-            flex-direction: column;
-            span{
-                font-weight: 600;
-            }
-        }
-        .track-sfrs-markt{
-            width: 201px;
-            height: 72px;
-            display: flex;
-            flex-direction: column;
-            span{
-                font-weight: 600;
-            }
-        }
-        
-       
-        // TRACKING ROAD MODAL DESIGN
-
-        .hh-grayBox {
-            margin-bottom: 20px;
-            border-top: 1px solid #706f6f53;
-            padding: 15px;
-            margin-top: 20px;
-            width: 710px;
-        }
-        
-        .track-road-row{
-            display: flex;
-            row-gap: 50px;
-        }
-        .pt45{padding-top:45px;}
-        .order-tracking{
-            text-align: center;
-            width: 116px;
-            position: relative;
-            display: block;
-        }
-        .order-tracking .is-complete{
-            display: block;
-            position: relative;
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
-            border: 0px solid #AFAFAF;
-            background-color: #f7be16;
-            margin: 0 auto;
-            transition: background 0.25s linear;
-            -webkit-transition: background 0.25s linear;
-            z-index: 2;
-        }
-        .order-tracking .is-complete:after {
-            display: block;
-            position: absolute;
-            content: '';
-            height: 14px;
-            width: 7px;
-            top: -2px;
-            bottom: 0;
-            left: 55px;
-            margin: auto 0;
-            border: 0px solid #AFAFAF;
-            border-width: 0px 2px 2px 0;
-            transform: rotate(45deg);
-            opacity: 0;
-        }
-        .order-tracking.completed .is-complete{
-            border-color: #27aa80;
-            border-width: 0px;
-            background-color: #27aa80;
-        }
-        .order-tracking.completed .is-complete:after {
-            border-color: #fff;
-            border-width: 0px 3px 3px 0;
-            width: 7px;
-            left: 11px;
-            opacity: 1;
-        }
-        .order-tracking p {
-            color: #A4A4A4;
-            font-size: 16px;
-            margin-top: 8px;
-            margin-bottom: 0;
-            line-height: 20px;
-        }
-        .order-tracking p span{font-size: 14px;}
-        .order-tracking.completed p{color: #000;}
-        .order-tracking::before {
-            content: '';
-            display: block;
-            height: 3px;
-            width: calc(100% - 40px);
-            background-color: #f7be16;
-            top: 13px;
-            position: absolute;
-            left: calc(-50% + 20px);
-            z-index: 0;
-        }
-        .order-tracking:first-child:before{display: none;}
-        .order-tracking.completed:before{background-color: #27aa80;}
-        
-        .track-anbr{
-            margin-left: 50px;
-        }
-
-
-
-
 
      // LOG IN MODAL DESIGN
     .modal-content{
@@ -859,11 +500,85 @@
         }
     }
 
-
-    // nav tabs border bottom
     .nav-tabs-active{
         border-bottom: 3px solid #F05835;
-    }   
+    }
+    
+
+    // ADRESS TABS DESIGN
+
+    
+    .order-item-title, .order-item-middle{
+        width: 722px;
+        height: 262px;
+        font-size: 13px;
+        padding: 30px;
+    }
+    .order-item-footer{
+        width: 722px;
+        padding: 25px 20px;
+        height: 152px;
+        border-top: 1px solid #706f6f61;
+
+
+    }
+    .adress-item-copy{
+        display: flex;
+        gap: 10px;
+    }
+    .copy-btn, .copy-btn-amrk{
+        border: none;
+        background-color: white;
+        i{
+            font-size: 14px;
+            color: rgb(56, 56, 205);
+        }
+    }
+    .adress-item-label-info{
+        margin: 0;
+    }
+    .adress-list-group-item{
+        h5{
+            font-size: 15px;
+            font-weight: 700;
+            color: #F05835;
+        }
+    }
+    .order-item-title{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #706f6f84;
+    }
+    .order-item-middle{
+        width: 722px;
+        height: 338px;
+        background-color: white;
+    }
+    .adress-item-value, .adress-item-label-info{
+        color: #706f6f;
+    }
+    .list-group-horizontal{
+        width: 622px;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-group-item{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        font-size: 14.5px;
+        color: #706f6f;
+        flex-basis: 33%;
+        h5{
+            font-size: 15px;
+            font-weight: 700;
+            color: #F05835;
+        }
+    }
+    .adress-item-label{
+        color: #F05835;
+        font-size: 26px;
+    }
 
 
     @media only screen and (max-width: 760px) {
@@ -971,7 +686,10 @@
             width: 355px;
             padding-left: 10px;
         }
-        
+        .order-card-main-row{
+          width: 353px;
+          height: max-content;
+        }
         .nav-tabs{
           width: 345px;
           height: 53px;
@@ -1007,7 +725,7 @@
             margin-left: 10px;
         }
         .form-filt-select{
-            padding-right: 20px;
+            padding-left: 15px;
         }
 
         .sifr-header-block{
@@ -1049,183 +767,6 @@
             text-decoration: none;
             color: black;
         }
-
-
-        // BAGLAMALAR TABLE STYLE RESPONSIVE
-        .order-main-pg{
-            width: 375px;
-        }
-        .bagl-header-block{
-            width: 345px;
-            display: flex;
-            padding: 10px;
-        }
-        
-        .mobile-none{
-            display: none;
-        }
-        .bagl-table-responsive{
-            width: 333px !important;
-            height: auto;
-        }
-        .bagl-ord-body{
-            display: flex;
-            flex-wrap: wrap;
-            width: 333px;
-            height: 195px;
-        }
-        .visibility-mobile{
-            display: block;
-            margin: 0;
-        }
-        .bagl-table{
-            width: 333px !important;
-            height: 195px;
-            border-collapse: collapse;
-        }
-        .bgl-magza-title{
-            width: 166px;
-            height: 96px;
-            padding: 25px 20px;
-        }
-        .bgl-nom-body{
-            width: 166px;
-        }
-        
-        .mobile-sfrs-title{
-            display: flex;
-        }
-        .bgl-karg-price-body{
-            width: 166px !important;
-            height: 99px;
-            padding: 25px 10px
-        }
-        .bgl-magza-title{
-            width: 166px;
-            height: 96px;
-            padding: 25px 20px;
-            text-align: start;
-        }
-        .bgl-status-title{
-            width: 166px;
-            height: 96px;
-            padding: 25px 10px;
-            text-align: start;
-        }
-
-        .mobile-card-btns{
-            display: flex;
-            gap: 15px;
-            width: 333px;
-            height: 80px;
-            padding: 15px 10px;
-        }
-
-        .mobile-card-btn-first{
-            width: 141px;
-            height: 30px;
-            color: white;
-            background-color: #f58d75;
-            border: none;
-            border-radius: 8px;
-        }
-        .mobile-card-btn-second{
-            width: 141px;
-            height: 30px;
-            color: white;
-            border: none;
-            border-radius: 8px;
-        }
-        .collapse-mobile{
-            width: 584px !important;
-            height: 441px;
-        }
-        .collps-body{
-            width: 584px;
-            height: 198px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .mobile-collapse-table{
-            width: 584px !important;
-            height: 441px;
-        }
-        .sfr-colp-title{
-            width: 280px;
-            height: 113px;
-        }
-        .weight-colp-title{
-            width: 280px;
-            height: 113px;
-        }
-        .price-colp-title, .track-code-colp-title{
-            width: 280px;
-            height: 113px;
-            text-align: start;
-        }
-
-        .collps-body-footer{
-            width: 584px;
-            height: 198px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .count-collps-title{
-            text-align: start;
-        }
-
-        .prodct-name-colps-title, .count-collps-title{
-            width: 280px;
-            height: 113px;
-        }
-        
-        .modal-content{
-            width: 375px;
-        }
-
-        
-
-
-        // BAGLAMALAR MODAL TRACKING ROAD RESPONSIVE MOBILE
-
-        .track-road-row{
-            padding: 0;
-            display: flex;
-            width: 300px;
-            margin-left: 40px;
-        }
-        .track-anbr{
-            margin: 0;
-        }
-        .pt45{
-            margin-left: 55px;
-            margin: 0;
-        }
-        .track-road-row{
-            gap: 10px;
-        }
-        .trackng-modal-table{
-            width: 331px !important;
-            height: 144px;
-        }
-        .track-modal-title-tr{
-            width: 331px !important;
-            height: 144px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            padding-left: 10px;
-        }
-        .track-sfrs-markt{
-            width: 150px;
-        }
-
-
-        // LOGOUT MODAL RESPONSIVE
-        .logout-bgl-modal{
-            height: 428px !important;
-        }
-
 
 
             // MODAL RESPONSIVE LOG IN MODAL DESIGN

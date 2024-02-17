@@ -506,6 +506,11 @@
     }
 
 
+    //nav tabs border style js
+    .nav-tabs-active{
+        border-bottom: 3px solid #F05835;
+    }
+
     @media only screen and (max-width: 760px) {
         *{
             margin: 0;

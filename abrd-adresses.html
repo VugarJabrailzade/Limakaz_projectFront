@@ -28,7 +28,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="Styles/scss/footer.css">
         <link rel="stylesheet" href="Styles/scss/userpanel.css">
-        <link rel="stylesheet" href="Styles/scss/sifarish.css">
+        <link rel="stylesheet" href="Styles/scss/abrd-adresses.css">
     <link rel="stylesheet" href="Styles/css/main.css">
 </head>
 
@@ -494,22 +494,6 @@
                         </div>
                         <div class="col-sm-12 col-md-8 col-lg-9">
                             <div>
-                                <div class="sifr-header-block">
-                                    <button type="button" class=" btn-refresh">
-                                        <span>
-                                            Yenilə
-                                            <i class="fa-solid fa-arrows-rotate"></i>
-                                        </span>
-                                    </button>
-                                    <form action="" class="form-sifr-filter">
-                                        <select class="form-filt-select">
-                                            <option value="-1">Hamısı</option>
-                                            <option value="1">Gözləmədə</option>
-                                            <option value="2">İcrada</option>
-                                            <option value="3">Problemli</option>
-                                        </select>
-                                    </form>
-                                </div>
                                 <div id="exTab2">
                                     <ul class="nav nav-tabs">
                                         <li class="nav-tabs-head-list nav-tabs-active active">
@@ -525,16 +509,208 @@
                                         <!-- TURKEY ORDER LIST -->
                                         <div class="tab-pane active" id="1">
                                             <div class="card-order-item">
-                                                <div class="order-item-title">
-                                                    <h3>Sifariş tapılmadı</h3>
+                                                <div class="order-item-title order-item-header">
+                                                    <div class="adress-head-list-group">
+                                                        <div class="adress-list-group-item">
+                                                            <h5>Ad, Soyad</h5>
+                                                            <div class="adress-item-copy">
+                                                                <p>12345 - LİMAK TAŞIMAÇILIK DIŞ TİCARET LİMİTED ŞİRKETİ</p>
+                                                                <div class="copy">
+                                                                    <button class="copy-btn" type="button" id="12345 - LİMAK TAŞIMAÇILIK DIŞ TİCARET LİMİTED ŞİRKETİ">
+                                                                        <i class="fa-solid fa-copy"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="adress-list-group-item">
+                                                            <h5>Adres başlığı</h5>
+                                                            <div class="adress-item-copy">
+                                                                <p class="adress-item-value">LİMAK - 12345 - USER USEROV</p>
+                                                                <div class="copy">
+                                                                    <button class="copy-btn" type="button" id="LİMAK - 12345 - USER USEROV">
+                                                                        <i class="fa-solid fa-copy"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="adress-list-group-item adress-loc-info">
+                                                            <h5>Adres satır 1</h5>
+                                                            <p class="adress-item-label-info">( Müştəri kodu,ad və soyadınızla birgə tam olaraq kopyalayın)</p>
+                                                            <div class="adress-item-copy">
+                                                                <p class="adress-item-value">0012345 USER USEROV,Gürsel mah.Bahçeler cad. Erdoğan iş merkezi 37-39B</p>
+                                                                <div class="copy">
+                                                                    <button class="copy-btn" type="button" id="0012345 USER USEROV,Gürsel mah.Bahçeler cad. Erdoğan iş merkezi 37-39B">
+                                                                        <i class="fa-solid fa-copy"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-item-middle">
+                                                    <div class="list-group-horizontal">
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">İl-Şehir</h5>
+                                                            <p class="adress-item-value">İstanbul</p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">Semt</h5>
+                                                            <p class="adress-item-value">Gürsel</p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">TC kimlik</h5>
+                                                            <p class="adress-item-value">123456789</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="list-group-horizontal">
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">İlçe</h5>
+                                                            <p class="adress-item-value">Kağıthane</p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">ZIP/post kodu</h5>
+                                                            <p class="adress-item-value">1234</p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">Cep telefon</h5>
+                                                            <p class="adress-item-value">123456789</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="list-group-horizontal">
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">Vergi dairesi</h5>
+                                                            <p class="adress-item-value">Şişli</p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">Ülke</h5>
+                                                            <p class="adress-item-value">Türkiye</p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">Vergi numarası</h5>
+                                                            <p class="adress-item-value">123456789</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="list-group-horizontal">
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label"></h5>
+                                                            <p class="adress-item-value"></p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label"></h5>
+                                                            <p class="adress-item-value"></p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">Trendyol SMS</h5>
+                                                            <p class="adress-item-value">123456789</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="order-item-footer">
+                                                    <div class="list-group-horizontal">
+                                                        <div class="list-group-item">
+                                                            <h2 class="adress-item-label">İş saatlari</h2>
+                                                            <p>Həftəiçi 5 gün: 09:00 - 17:00 <br> 
+                                                                Şənbə: 09:00 - 14:00 <br>
+                                                                Bazar günü qeyri-iş günüdür.</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- AMERIKA ORDER LIST -->
                                         <div class="tab-pane" id="2">
                                             <div class="card-order-item">
-                                                <div class="order-item-title">
-                                                    <h3>Sifariş tapılmadı</h3>
+                                                <div class="order-item-title order-item-header">
+                                                    <div class="adress-head-list-group">
+                                                        <div class="adress-list-group-item">
+                                                            <h5>Name</h5>
+                                                            <div class="adress-item-copy">
+                                                                <p>AZ0012345 USER USEROV</p>
+                                                                <div class="copy">
+                                                                    <button class="copy-btn-amrk" type="button" id="AZ0012345 USER USEROV">
+                                                                        <i class="fa-solid fa-copy"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="adress-list-group-item">
+                                                            <h5>Address line</h5>
+                                                            <div class="adress-item-copy">
+                                                                <p class="adress-item-value">320 Cornell drive C1</p>
+                                                                <div class="copy">
+                                                                    <button class="copy-btn-amrk" type="button" id="320 Cornell drive C1">
+                                                                        <i class="fa-solid fa-copy"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="adress-list-group-item adress-loc-info">
+                                                            <h5>Address line 2</h5>
+                                                            <div class="adress-item-copy">
+                                                                <p class="adress-item-value">AZ0012223</p>
+                                                                <div class="copy">
+                                                                    <button class="copy-btn-amrk" type="button" id="AZ0012223">
+                                                                        <i class="fa-solid fa-copy"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-item-middle">
+                                                    <div class="list-group-horizontal">
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">State</h5>
+                                                            <div class="adress-item-copy">
+                                                                <p class="adress-item-value">Delaware (DE) </p>
+                                                                <div class="copy">
+                                                                    <button class="copy-btn-amrk" type="button" id="Delaware (DE)">
+                                                                        <i class="fa-solid fa-copy"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">City</h5>
+                                                            <div class="adress-item-copy">
+                                                                <p class="adress-item-value">Wilmington </p>
+                                                                <div class="copy">
+                                                                    <button class="copy-btn-amrk" type="button" id="Wilmington">
+                                                                        <i class="fa-solid fa-copy"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">ZIP\Postal code</h5>
+                                                            <p class="adress-item-value">12345</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="list-group-horizontal">
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">Country</h5>
+                                                            <p class="adress-item-value">United States</p>
+                                                        </div>
+                                                        <div class="list-group-item">
+                                                            <h5 class="adress-item-label">Phone number</h5>
+                                                            <p class="adress-item-value">123456789</p>
+                                                        </div>
+                                                    </div>           
+                                                    
+                                                </div>
+                                                <div class="order-item-footer">
+                                                    <div class="list-group-horizontal">
+                                                        <div class="list-group-item">
+                                                            <h2 class="adress-item-label">İş saatlari</h2>
+                                                            <p>Həftəiçi 5 gün: 10:00 - 17:00 <br> 
+                                                                Şənbə və Bazar günü qeyri-iş günləridir.</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -662,7 +838,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="Js/common.js"></script>
-<script src="Js/sifarish.js"></script>
+<script src="Js/abrd-adresses.js"></script>
 
 
 </html>
