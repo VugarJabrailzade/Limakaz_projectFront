@@ -28,7 +28,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="Styles/scss/footer.css">
         <link rel="stylesheet" href="Styles/scss/userpanel.css">
-        <link rel="stylesheet" href="Styles/scss/abrd-adresses.css">
+        <link rel="stylesheet" href="Styles/scss/user-settings.css">
     <link rel="stylesheet" href="Styles/css/main.css">
 </head>
 
@@ -480,7 +480,7 @@
                             <div>
                                 <h4>İstifadəçi paneli</h4>
                             </div>
-                            <ol class="contact-breadcamp">
+                            <ol class="settings-breadcamp">
                                 <li>
                                     <a href="#" class="main-page-breadcamp" >Ana səhifə</a>
                                 </li>
@@ -497,219 +497,162 @@
                                 <div id="exTab2">
                                     <ul class="nav nav-tabs">
                                         <li class="nav-tabs-head-list nav-tabs-active active">
-                                            <img src="https://limak.az/new_front/assets/img/dashboard/icons/tr-circle.svg" alt="">
-                                            <a class="tabs-head" href="#1" data-toggle="tab">Türkiyə</a>
+                                            <a class="tabs-head" href="#1" data-toggle="tab">Hesab məlumatları</a>
                                         </li>
                                         <li class="nav-tabs-head-list">
-                                            <img src="https://limak.az/new_front/assets/img/dashboard/icons/usa-circle.svg" alt="">
-                                            <a class="tabs-head" href="#2" data-toggle="tab">Amerika</a>
+                                            <a class="tabs-head" href="#2" data-toggle="tab">Şifrə</a>
+                                        </li>
+                                        <li class="nav-tabs-head-list">
+                                            <a class="tabs-head" href="#3" data-toggle="tab">Ş/V məlumatları</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content ">
-                                        <!-- TURKEY ORDER LIST -->
+                                        <!-- HESAB MELUMATLARİ LİST -->
                                         <div class="tab-pane active" id="1">
                                             <div class="card-order-item">
-                                                <div class="order-item-title order-item-header">
-                                                    <div class="adress-head-list-group">
-                                                        <div class="adress-list-group-item">
-                                                            <h5>Ad, Soyad</h5>
-                                                            <div class="adress-item-copy">
-                                                                <p>12345 - LİMAK TAŞIMAÇILIK DIŞ TİCARET LİMİTED ŞİRKETİ</p>
-                                                                <div class="copy">
-                                                                    <button class="copy-btn" type="button" id="12345 - LİMAK TAŞIMAÇILIK DIŞ TİCARET LİMİTED ŞİRKETİ">
-                                                                        <i class="fa-solid fa-copy"></i>
-                                                                    </button>
+                                                <div class="order-item-card">
+                                                    <div class="settigns-item-card-body">
+                                                        <form class="form-settings">
+                                                            <div class="row setting-info-row">
+                                                                <div class="col-md-6 col-12">
+                                                                    <input id="name" type="text" class="setting-name"
+                                                                           placeholder="Ad"
+                                                                           readonly="readonly" required="required">
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <input id="surname" type="text"
+                                                                           placeholder="Soyad" class="setting-surname"
+                                                                           readonly="readonly" required="required">
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <select class="custom-select setting-offce" id="">
+                                                                        <option disabled="disabled">--Çatdırılma ofisi --</option>
+                                                                        <option value="1">Bakı-İçərişəhər</option>
+                                                                        <option value="2">Gəncə</option>
+                                                                        <option value="3">Xalqlar Dostluğu</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <input type="date" class="setting-date" max="2007-01-01">
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <input type="email" placeholder="E-mail" readonly="readonly"
+                                                                           required="required" class="setting-email">
+                                                                </div>
+                                                                <div class="col-md-6 col-12 dropdown-numb">
+                                                                    <div class="setting-numb-pref ">
+                                                                        <select class="setting-mobile-select">
+                                                                            <option disabled="disabled" value="">-- Prefix --</option>
+                                                                            <option value="1">055</option>
+                                                                            <option value="2">050</option>
+                                                                            <option value="3">077</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <input  type="text" class="settings-mobile">
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="setting-notf dropdown-numb">
+                                                                        <select class="setting-notfc-type">
+                                                                            <option disabled="disabled" value="">--Bildiriş tipi</option>
+                                                                            <option value="1">SMS</option>
+                                                                            <option value="2">Whatsapp</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div class="setting-save-btn">
+                                                                        <button type="button" class="saveBtn">
+                                                                            <div>Yadda saxla</div>
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="adress-list-group-item">
-                                                            <h5>Adres başlığı</h5>
-                                                            <div class="adress-item-copy">
-                                                                <p class="adress-item-value">LİMAK - 12345 - USER USEROV</p>
-                                                                <div class="copy">
-                                                                    <button class="copy-btn" type="button" id="LİMAK - 12345 - USER USEROV">
-                                                                        <i class="fa-solid fa-copy"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="adress-list-group-item adress-loc-info">
-                                                            <h5>Adres satır 1</h5>
-                                                            <p class="adress-item-label-info">( Müştəri kodu,ad və soyadınızla birgə tam olaraq kopyalayın)</p>
-                                                            <div class="adress-item-copy">
-                                                                <p class="adress-item-value">0012345 USER USEROV,Gürsel mah.Bahçeler cad. Erdoğan iş merkezi 37-39B</p>
-                                                                <div class="copy">
-                                                                    <button class="copy-btn" type="button" id="0012345 USER USEROV,Gürsel mah.Bahçeler cad. Erdoğan iş merkezi 37-39B">
-                                                                        <i class="fa-solid fa-copy"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="order-item-middle">
-                                                    <div class="list-group-horizontal">
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">İl-Şehir</h5>
-                                                            <p class="adress-item-value">İstanbul</p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">Semt</h5>
-                                                            <p class="adress-item-value">Gürsel</p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">TC kimlik</h5>
-                                                            <p class="adress-item-value">123456789</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="list-group-horizontal">
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">İlçe</h5>
-                                                            <p class="adress-item-value">Kağıthane</p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">ZIP/post kodu</h5>
-                                                            <p class="adress-item-value">1234</p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">Cep telefon</h5>
-                                                            <p class="adress-item-value">123456789</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="list-group-horizontal">
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">Vergi dairesi</h5>
-                                                            <p class="adress-item-value">Şişli</p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">Ülke</h5>
-                                                            <p class="adress-item-value">Türkiye</p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">Vergi numarası</h5>
-                                                            <p class="adress-item-value">123456789</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="list-group-horizontal">
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label"></h5>
-                                                            <p class="adress-item-value"></p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label"></h5>
-                                                            <p class="adress-item-value"></p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">Trendyol SMS</h5>
-                                                            <p class="adress-item-value">123456789</p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="order-item-footer">
-                                                    <div class="list-group-horizontal">
-                                                        <div class="list-group-item">
-                                                            <h2 class="adress-item-label">İş saatlari</h2>
-                                                            <p>Həftəiçi 5 gün: 09:00 - 17:00 <br> 
-                                                                Şənbə: 09:00 - 14:00 <br>
-                                                                Bazar günü qeyri-iş günüdür.</p>
-                                                        </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- AMERIKA ORDER LIST -->
+                                        <!-- ŞİFRE LIST -->
                                         <div class="tab-pane" id="2">
-                                            <div class="card-order-item">
-                                                <div class="order-item-title order-item-header">
-                                                    <div class="adress-head-list-group">
-                                                        <div class="adress-list-group-item">
-                                                            <h5>Name</h5>
-                                                            <div class="adress-item-copy">
-                                                                <p>AZ0012345 USER USEROV</p>
-                                                                <div class="copy">
-                                                                    <button class="copy-btn-amrk" type="button" id="AZ0012345 USER USEROV">
-                                                                        <i class="fa-solid fa-copy"></i>
+                                            <div class="card-order-item setting-item-tab1">
+                                                <div class="order-item-title">
+                                                    <div class="settings-item-pasw-body">
+                                                        <form class="form-safety">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-12 safety-row">
+                                                                    <div class="card-pasw-step-one">
+                                                                        <h3>CARİ ŞİFRƏ</h3>
+                                                                        <div class="old-pasw-item">
+                                                                            <input id="currentPass" placeholder="Şifrə" type="password"
+                                                                                    required="required" class="current-pass">
+                                                                                    <div>
+                                                                                        <button class="show-password">
+                                                                                            <i class="fa-regular fa-eye"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-pasw-step-second">
+                                                                        <h3>YENİ ŞİFRƏ</h3>
+                                                                        <input id="newPass" type="password" placeholder="Şifrə" 
+                                                                               required="required">
+                                                                        <input id="newPassRepaeat" type="password" placeholder="Təkrar şifrə"
+                                                                               required="required" >
+                                                                    </div>
+                                                                    <button type="button" disabled="disabled" class="save-btn-pass-tabs">
+                                                                        <div>Yadda saxla</div>
                                                                     </button>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="adress-list-group-item">
-                                                            <h5>Address line</h5>
-                                                            <div class="adress-item-copy">
-                                                                <p class="adress-item-value">320 Cornell drive C1</p>
-                                                                <div class="copy">
-                                                                    <button class="copy-btn-amrk" type="button" id="320 Cornell drive C1">
-                                                                        <i class="fa-solid fa-copy"></i>
-                                                                    </button>
+                                                                <div class="col-lg-6 col-12">
+                                                                    <div class="form-pass-info-img">
+                                                                        <img src="https://limak.az/new_front/assets/img/dashboard/safety.svg" alt="">
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="adress-list-group-item adress-loc-info">
-                                                            <h5>Address line 2</h5>
-                                                            <div class="adress-item-copy">
-                                                                <p class="adress-item-value">AZ0012223</p>
-                                                                <div class="copy">
-                                                                    <button class="copy-btn-amrk" type="button" id="AZ0012223">
-                                                                        <i class="fa-solid fa-copy"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        </form>
                                                     </div>
                                                 </div>
-                                                <div class="order-item-middle order-item-middle-amrk">
-                                                    <div class="list-group-horizontal">
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">State</h5>
-                                                            <div class="adress-item-copy">
-                                                                <p class="adress-item-value">Delaware (DE) </p>
-                                                                <div class="copy">
-                                                                    <button class="copy-btn-amrk" type="button" id="Delaware (DE)">
-                                                                        <i class="fa-solid fa-copy"></i>
-                                                                    </button>
+                                            </div>
+                                        </div>
+                                        <!-- Ş/V MELUMATLARİ -->
+                                        <div class="tab-pane" id="3">
+                                            <div class="card-order-item settings-item-sv">
+                                                <div class="order-item-title">
+                                                    <div class="settings-item-sv-body">
+                                                        <form class="settings-sv">
+                                                            <div class="row settings-sv-row">
+                                                                <div class="col-6">
+                                                                    <input id="series" type="text" class="pass-series"
+                                                                    placeholder="Seriya nömrəsi" required="required">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input id="fin-code" type="text" class="settings-fincode"
+                                                                    placeholder="Fin" required="required" readonly="readonly"
+                                                                    disabled="disabled">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <select class="select-citizen" value="">
+                                                                        <option disabled="disabled" value>-- Vətəndaşlığı</option>
+                                                                        <option value="Azərbaycan">Azərbaycan</option>
+                                                                        <option value="Digər">Digər</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <select class="select-gender" value="">
+                                                                        <option disabled="disabled" value>-- Cinsi</option>
+                                                                        <option value="1">Kişi</option>
+                                                                        <option value="2">Qadın</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input id="address" type="text" class="settings-address"
+                                                                           placeholder="Ünvan" required="required">
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">City</h5>
-                                                            <div class="adress-item-copy">
-                                                                <p class="adress-item-value">Wilmington </p>
-                                                                <div class="copy">
-                                                                    <button class="copy-btn-amrk" type="button" id="Wilmington">
-                                                                        <i class="fa-solid fa-copy"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">ZIP\Postal code</h5>
-                                                            <p class="adress-item-value">12345</p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="list-group-horizontal">
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">Country</h5>
-                                                            <p class="adress-item-value">United States</p>
-                                                        </div>
-                                                        <div class="list-group-item">
-                                                            <h5 class="adress-item-label">Phone number</h5>
-                                                            <p class="adress-item-value">123456789</p>
-                                                        </div>
-                                                    </div>           
-                                                    
-                                                </div>
-                                                <div class="order-item-footer">
-                                                    <div class="list-group-horizontal">
-                                                        <div class="list-group-item">
-                                                            <h2 class="adress-item-label">İş saatlari</h2>
-                                                            <p>Həftəiçi 5 gün: 10:00 - 17:00 <br> 
-                                                                Şənbə və Bazar günü qeyri-iş günləridir.</p>
-                                                        </div>
+                                                            <button type="button" class="saveBtn-sv">
+                                                                <div>Yadda saxla</div>
+                                                            </button>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -838,7 +781,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="Js/common.js"></script>
-<script src="Js/abrd-adresses.js"></script>
+<script src="Js/sifarish.js"></script>
 
 
 </html>

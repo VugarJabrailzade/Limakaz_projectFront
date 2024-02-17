@@ -11,6 +11,7 @@
     10) orderde yeni link elave etmek( qiraga yazib sonra add)          ----- (alindira bilmedim)
     11) register page terms modal baglananda classlist qalmagi          +++++ 
     12) Card Page yeni Sebet, Basket                                    -----
+    13) Register sehifesinde terms modal background islemir            
 
 
 
@@ -19,6 +20,6 @@
     2) Bildirishler                                                     +++++
     3) Baglamalar                                                       +++++ 
     4) Beyan gozleyen
-    5) Xaricdeki Unvanlar
+    5) Xaricdeki Unvanlar                                               +++++
     6) Tenzimlemeler
     7) BAGLAMALAR RESPONSIVDE QALDIM SONUNCU                            +++++
