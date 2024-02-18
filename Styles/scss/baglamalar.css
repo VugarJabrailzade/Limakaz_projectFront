@@ -552,6 +552,22 @@
   border: none;
 }
 
+.note-link-tab {
+  width: 303px;
+  height: 92px;
+  padding: 25px 20px;
+}
+.note-link-tab a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.note-link-tab a:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 255, 0.627);
+}
+
 .mobile-collapse-table {
   width: 1000px;
   height: 203px;
