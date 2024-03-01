@@ -605,7 +605,7 @@
   align-items: center;
 }
 
-.regr-btn {
+#regr-btn {
   width: 320px;
   height: 50px;
   background: linear-gradient(180deg, #FC7B5D 0%, #F05835 100%);
