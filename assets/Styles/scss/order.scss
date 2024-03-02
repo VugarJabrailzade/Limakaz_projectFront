@@ -662,6 +662,16 @@
     flex-direction: column;
   }
 
+
+
+  .nav-tabs-active{
+    border-bottom: 3px solid #F05835;
+    border-right-width: 55px;
+}
+
+
+
+
   @media only screen and (max-width: 760px) {
         *{
             margin: 0;
