@@ -18,16 +18,19 @@ showPaswordBtn.addEventListener("click", (e)=>{
 })
 
 
-function checkBox() {
-    var rememberMe = document.querySelector("._rememberMe");
-    if (rememberMe.checked) {
-        console.log("truee")
-        return rememberMe.value = true;
-    }
-    else {
-        console.log("Falseee")
-        return rememberMe.value = false;
 
-    }
-}
+    var rememberMe = document.querySelector("._rememberMe");
+    
+    rememberMe.addEventListener("click", (e)=>{
+        if (rememberMe.checked) {
+            console.log("truee")
+            return rememberMe.value = true;
+        }
+        else {
+            console.log("Falseee")
+            return rememberMe.value = false;
+    
+        }
+    })
+
 
