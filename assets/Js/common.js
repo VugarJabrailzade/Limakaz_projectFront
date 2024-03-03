@@ -1,7 +1,8 @@
 var showPaswordBtn = document.querySelector(".visibility-btn-password");
 var passwordInput = document.getElementById("login-password");
 
-showPaswordBtn.style.cursor = "pointer"
+showPaswordBtn.style.cursor = "pointer";
+
 
 showPaswordBtn.addEventListener("click", (e)=>{
    e.preventDefault();
@@ -19,7 +20,7 @@ showPaswordBtn.addEventListener("click", (e)=>{
 
 
 
-    var rememberMe = document.querySelector("._rememberMe");
+    var rememberMe = document.getElementById("__Rem-Me");
     
     rememberMe.addEventListener("click", (e)=>{
         if (rememberMe.checked) {

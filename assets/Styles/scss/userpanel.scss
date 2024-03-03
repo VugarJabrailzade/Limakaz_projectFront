@@ -648,7 +648,25 @@
       font-weight: 800;
     }
   
-
+   
+    .search-icon-head:hover .search-container{
+      display: block;
+      animation: slideUp 0.3s ease;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    
+    @keyframes slideUp {
+      from {
+          transform: translateY(100%); /* Başlangıç pozisyonu: aşağıda */
+      }
+      to {
+          transform: translateY(0); /* Bitiş pozisyonu: yukarıda */
+      }
+    }
+    .search-head-input{
+      display: none;
+    }
   
   
 
