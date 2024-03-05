@@ -19,7 +19,7 @@ checkKargoTrue.forEach((radio)=>{
 })
 
 
-var newLinkBtn = document.querySelector(".link-button")
+var newLinkBtn = document.querySelectorAll(".link-button")
 var cardBody = document.querySelector(".tab-content")
 var fullCardBody = document.querySelector(".order-card-body");
 var cardContaner = document.querySelector(".extraTabContent");
@@ -27,19 +27,63 @@ var trtapPane = document.getElementById("1")
 console.log(trtapPane)
 var tabpane = document.querySelectorAll(".tab-pane")
 
+var orderFormHtml = `
+<div class="tab-pane active" id="1">
+    <div class="ordercard-list">
+        <div class="order-card-body">
+            <form class="form-ordercard">
+                <div class="row">
+                    <div class="col-sm-9 col-12">
+                        <div>
+                            <label class="form-control-label" for="product-link">Məhsulun linki *</label>
+                            <div class="url-input-block">
+                                <input type="url" placeholder="Məhsulun linki" required="required" class="form-control-url">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Diğer HTML içeriği buraya ekleyin -->
+                </div>
+                <div class="order-card-actions">
+                    <div></div>
+                    <div>
+                        <button type="button" class="link-button">
+                            <img src="https://limak.az/new_front/assets/img/icons/plus-circle.svg" alt="">
+                            <span>Yeni link</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+`;
 
 
-
-newLinkBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    
-    tabpane.forEach((element) => {
-        if (element.classList.contains("active")) {
-            var tabContent = trtapPane.innerHTML;
-            cardContaner.innerHTML = tabContent;
-        }
+newLinkBtn.forEach(btnLink =>{
+    btnLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        
+        tabpane.forEach((element) => {
+            if (element.classList.contains("active")) {
+                // Yeni form elementi oluştur
+                var newForm = document.createElement('div');
+                newForm.innerHTML = trtapPane.innerHTML;
+                element.append(newForm);
+                console.log(newForm)
+            }
+        });
     });
 });
+
+// newLinkBtn.addEventListener("click", (e) => {
+//     e.preventDefault();
+    
+//     tabpane.forEach((element) => {
+//         if (element.classList.contains("active")) {
+//             cardContaner.innerHTML = orderFormHtml;
+//         }
+//     });
+// });
 
 
 var paymentInputSidebar = document.querySelectorAll(".custom-payment-input")
@@ -58,59 +102,61 @@ paymentInputSidebar.forEach((inputs) =>{
     })
 })
 
-// TURKEY PRICE PERCENT CALCULATION
-var productPriceTr = document.querySelector(".product-priceTr");
-var pricePercentTr = document.querySelector(".product-price-percentTr")
-var sideBarTotalPrice = document.querySelector(".payment-total-price");
 
-
-
-productPriceTr.addEventListener("input", (e) => {
-    e.preventDefault();
-
-    // Input deyeri
-    var inputValue = parseFloat(e.target.value);
-    console.log(inputValue)
-
-    if (isNaN(inputValue)) {
-        inputValue = 0;
-    }
-
-    var values = inputValue;
-    var percentPrice = (values * 5) / 100;
-    var lastTotalTryPrice = values + percentPrice;
-    console.log(lastTotalTryPrice)
-
+    // TURKEY PRICE PERCENT CALCULATION
+    var productPriceTr = document.querySelector(".product-priceTr");
+    var pricePercentTr = document.querySelector(".product-price-percentTr")
+    var sideBarTotalPrice = document.querySelector(".payment-total-price");
     
-    pricePercentTr.value = lastTotalTryPrice
-    sideBarTotalPrice.innerHTML = lastTotalTryPrice + " TRY";
-});
-
-// AMERIKA PRICE PERCENT CALCULATION
-var productPriceUsd = document.querySelector(".product-price-usd");
-var pricePercentUsd = document.querySelector(".price-percent-usd")
-var sideBarTotalPrice = document.querySelector(".payment-total-price");
-
-productPriceUsd.addEventListener("input", (e) => {
-    e.preventDefault();
-
-    // Input deyeri
-    var inputValue = parseFloat(e.target.value);
-    console.log(inputValue)
-
-    if (isNaN(inputValue)) {
-        inputValue = 0;
-    }
-
-    var values = inputValue;
-    var percentPrice = (values * 7) / 100;
-    var lastTotalTryPrice = values + percentPrice;
-    console.log(lastTotalTryPrice)
-
     
-    pricePercentUsd.value = lastTotalTryPrice
-    sideBarTotalPrice.innerHTML = lastTotalTryPrice + " USD";
-});
+    
+    productPriceTr.addEventListener("input", (e) => {
+        e.preventDefault();
+    
+        // Input deyeri
+        var inputValue = parseFloat(e.target.value);
+        console.log(inputValue)
+    
+        if (isNaN(inputValue)) {
+            inputValue = 0;
+        }
+    
+        var values = inputValue;
+        var percentPrice = (values * 5) / 100;
+        var lastTotalTryPrice = values + percentPrice;
+        console.log(lastTotalTryPrice)
+    
+        
+        pricePercentTr.value = lastTotalTryPrice
+        sideBarTotalPrice.innerHTML = lastTotalTryPrice + " TRY";
+    });
+    
+    // AMERIKA PRICE PERCENT CALCULATION
+    var productPriceUsd = document.querySelector(".product-price-usd");
+    var pricePercentUsd = document.querySelector(".price-percent-usd")
+    var sideBarTotalPrice = document.querySelector(".payment-total-price");
+    
+    productPriceUsd.addEventListener("input", (e) => {
+        e.preventDefault();
+    
+        // Input deyeri
+        var inputValue = parseFloat(e.target.value);
+        console.log(inputValue)
+    
+        if (isNaN(inputValue)) {
+            inputValue = 0;
+        }
+    
+        var values = inputValue;
+        var percentPrice = (values * 7) / 100;
+        var lastTotalTryPrice = values + percentPrice;
+        console.log(lastTotalTryPrice)
+    
+        
+        pricePercentUsd.value = lastTotalTryPrice
+        sideBarTotalPrice.innerHTML = lastTotalTryPrice + " USD";
+    });
+
 
 
 var tabs= document.querySelector(".nav-tabs")
@@ -184,3 +230,14 @@ tabList.forEach(function(tab) {
     });
 });
 
+// Tab-pane'ın içindeki formu submit etmek için
+document.addEventListener("DOMContentLoaded", function() {
+    var tabPane = document.querySelector(".tab-pane.active form.form-ordercard");
+    var submitButton = document.querySelector(".tab-pane.active .link-button");
+
+    if (tabPane && submitButton) {
+        submitButton.addEventListener("click", function() {
+            tabPane.submit();
+        });
+    }
+});
