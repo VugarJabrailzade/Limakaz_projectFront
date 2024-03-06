@@ -23,9 +23,10 @@ var newLinkBtn = document.querySelectorAll(".link-button")
 var cardBody = document.querySelector(".tab-content")
 var fullCardBody = document.querySelector(".order-card-body");
 var cardContaner = document.querySelector(".extraTabContent");
-var trtapPane = document.getElementById("1")
+var trtapPane = document.querySelector(".tukish")
 console.log(trtapPane)
-var tabpane = document.querySelectorAll(".tab-pane")
+var tabpane = document.querySelectorAll(".order-turkish")
+
 
 var orderFormHtml = `
 <div class="tab-pane active" id="1">
@@ -66,9 +67,11 @@ newLinkBtn.forEach(btnLink =>{
         tabpane.forEach((element) => {
             if (element.classList.contains("active")) {
                 // Yeni form elementi oluştur
-                var newForm = document.createElement('div');
-                newForm.innerHTML = trtapPane.innerHTML;
-                element.append(newForm);
+                // var newForm = document.createElement('div');
+                // console.log(trtapPane.innerHTML);
+                // newForm.innerHTML = trtapPane.innerHTML;
+                let newForm = trtapPane.innerHTML
+                element.innerHTML(newForm);
                 console.log(newForm)
             }
         });
@@ -230,7 +233,7 @@ tabList.forEach(function(tab) {
     });
 });
 
-// Tab-pane'ın içindeki formu submit etmek için
+// Tab-pane'ın içindeki formu submit etmek için 
 document.addEventListener("DOMContentLoaded", function() {
     var tabPane = document.querySelector(".tab-pane.active form.form-ordercard");
     var submitButton = document.querySelector(".tab-pane.active .link-button");
