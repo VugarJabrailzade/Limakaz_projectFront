@@ -586,6 +586,20 @@
   color: #F05835;
 }
 
+.list-group-item-adrs {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-size: 14.5px;
+  color: #706f6f;
+  flex-basis: 33%;
+}
+.list-group-item-adrs h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #F05835;
+}
+
 .adress-item-label {
   color: #F05835;
   font-size: 26px;
